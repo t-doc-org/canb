@@ -300,4 +300,4 @@ La bibliographie va se mettre automatiquement à jour :
 Figure {nump}`figure`
 ```
 
-Vous pouvez télécharger le résultat final : [fichiers_styles/Histoire_ordinateur_brut.pdf](fichiers_styles/Histoire_ordinateur_final.pdf)
+Vous pouvez télécharger le résultat final : [Histoire_ordinateur_final.pdf](fichiers_styles/Histoire_ordinateur_final.pdf)
