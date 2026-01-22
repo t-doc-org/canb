@@ -1,4 +1,4 @@
-# Copyright 2026 Brice Canvel <brice.canvel@edufr.ch>
+# Copyright 2026 Brice Canvel <brccvl@proton.me>
 # SPDX-License-Identifier: CC-BY-NC-SA-4.0
 
 from tdoc.common.defaults import *
