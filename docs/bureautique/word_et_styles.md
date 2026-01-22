@@ -2,15 +2,18 @@
 
 ## Introduction
 
-Vous allez travailler avec le document <a href="./fichiers_styles/Histoire_ordinateur_brut.docx">Histoire_ordinateur_brut.docx</a>.
+Vous allez travailler avec le document [Histoire_ordinateur_brut.docx](fichiers_styles/Histoire_ordinateur_brut.docx).
 
 Le but de ce document est de vous guider dans la mise en forme et de vous montrer les fonctionnalités de base des styles qui permettent de présenter efficacement un document long.
 
 ## La forme
 
-Le document “histoire ordinateur brut.docx” est composé de titres de différents niveaux :
+Le document “Histoire_ordinateur_brut.docx” est composé de titres de différents niveaux :
 
-![image](fichiers_styles/img_25.png){width=700} 
+```{figure} fichiers_styles/img_25.png
+:width: 700px
+Figure {nump}`figure`: table des matières
+```
 
 Mais tout d’abord, qu’entend-on par “niveau” ? C’est tout simple, notre document contient une hiérarchie, c’est-à-dire qu’il contient des éléments qui vont du plus important au moins important :
 
@@ -32,14 +35,24 @@ Afin de pouvoir numéroter ces titres facilement et de créer une table des mati
 
 Pour afficher la fenêtre du styliste, il faut cliquer sur :
 
-| ![image](fichiers_styles/img_19.png) Figure 1: sur Mac OS | ![image](fichiers_styles/img_16.png) Figure 2: sur Windows |
-| --- | --- |
+````{list-grid}
+:style: grid-template-columns: 1fr 1fr;
+- ```{figure} fichiers_styles/img_19.png
+   :width: 100px
+   Figure {nump}`figure`: sur Mac OS
+   ```
+- ```{figure} fichiers_styles/img_16.png
+   :width: 100px
+   Figure {nump}`figure`: sur Windows
+   ```
+````
 
 Apparaît alors la fenêtre suivante :
 
-![image](fichiers_styles/img_08.png)
+```{figure} fichiers_styles/img_08.png
+Figure {nump}`figure`: fenêtre de styles
+```
 
-Figure 3 : fenêtre de styles
 
 ### Organisation du document
 
@@ -62,15 +75,17 @@ Pour appliquer un style, c’est-à-dire lier un élément avec un style, 2 éta
 
 Par exemple, si on clique sur le titre du document « Histoire de l’ordinateur » et que l’on clique ensuite sur Titre, on obtient le résultat :
 
-![image](fichiers_styles/img_26.png){width=700} 
-
-Figure 4 : exemple d'utilisation du style Titre
+```{figure} fichiers_styles/img_26.png
+:width: 700px
+Figure {nump}`figure`: exemple d'utilisation du style Titre
+```
 
 Et pour les titres de sections et sous-sections on obtient le résultat :
 
-![image](fichiers_styles/img_01.png){width=700} 
-
-Figure 5 : exemple d'utilisation des styles Titre 1 & 2
+```{figure} fichiers_styles/img_01.png
+:width: 700px
+Figure {nump}`figure`: exemple d'utilisation des styles Titre 1 & 2
+```
 
 > **Maintenant à vous de jouer**  
 > Appliquez tous les styles en respectant la forme qui est donnée.  
@@ -94,15 +109,17 @@ Maintenant que chaque type de titre a son style défini, on peut ajouter une num
 
 Depuis le menu Accueil, section Paragraphe, cliquer sur Liste à plusieurs niveaux :
 
-![image](fichiers_styles/img_20.png){width=150} 
-
-Figure 6 : menu de choix de la numérotation
+```{figure} fichiers_styles/img_20.png
+:width: 150px
+Figure {nump}`figure`: menu de choix de la numérotation
+```
 
 Ensuite cliquer sur le style de liste à plusieurs niveaux :
 
-![image](fichiers_styles/img_12.png){width=700} 
-
-Figure 7 : numérotation des titres
+```{figure} fichiers_styles/img_12.png
+:width: 700px
+Figure {nump}`figure`: numérotation des titres
+```
 
 > **Maintenant à vous de jouer**  
 > Appliquez la numérotation aux sections et sous-sections.  
@@ -115,9 +132,10 @@ Maintenant que nos titres sont bien définis et que la numérotation est en plac
 
 Référence puis Table des matières et choisir Classique :
 
-![image](fichiers_styles/img_06.png){width=400} 
-
-Figure 8 : insertion de la table des matières
+```{figure} fichiers_styles/img_06.png
+:width: 400px
+Figure {nump}`figure`: insertion de la table des matières
+```
 
 > **Maintenant à vous de jouer**  
 > Insérez une table des matières après le titre principal (placez le curseur directement après (derrière, pas dessous) le titre principal).  
@@ -140,25 +158,37 @@ Double cliquer sur la partie supérieure ou inférieure d’un page quelconque
 
 Utiliser le menu Insérer -> En-tête / pied de page :
 
-![image](fichiers_styles/img_17.png){width=200} 
+```{figure} fichiers_styles/img_17.png
+:width: 200px
+Figure {nump}`figure`: différentes options pour en-têtes et pieds de page
+```
 
-![image](fichiers_styles/img_30.png){width=400} 
+```{figure} fichiers_styles/img_30.png
+:width: 300px
+Figure {nump}`figure`: différentes options pour en-têtes et pieds de page
+```
 
-![image](fichiers_styles/img_04.png){width=400} 
+```{figure} fichiers_styles/img_04.png
+:width: 300px
+Figure {nump}`figure`: différentes options pour en-têtes et pieds de page
+```
 
-Figure 9 : différentes options pour en-têtes et pieds de page
-
-![image](fichiers_styles/img_21.png)
+```{figure} fichiers_styles/img_21.png
+:width: 400px
+Figure {nump}`figure`: apparence du pied de page
+```
 
 ### Numérotation des pages
 
 Word vous permet d’insérer des données gérées par le système telles que la date, l’heure ou le numéro de page* :*
 
-![image](fichiers_styles/img_13.png)
+```{figure} fichiers_styles/img_13.png
+Figure {nump}`figure`: champs date et heure
+```
 
-![image](fichiers_styles/img_09.png)
-
-Figure 10 : champs insérables
+```{figure} fichiers_styles/img_09.png
+Figure {nump}`figure`: champ numéro de page
+```
 
 > **Maintenant à vous de jouer**  
 > Après avoir activé le pied de page, insérer le numéro de page à droite.  
@@ -172,68 +202,102 @@ Vous allez devoir ajouter une bibliographie. Pour cela, rendez-vous dans le menu
 
 Choisissez le format de la bibliographie (ISO 690 – Premier élément et date pour un document en français, APA pour un document en allemand) :
 
-![image](fichiers_styles/img_28.png){width=300} 
+```{figure} fichiers_styles/img_28.png
+:width: 300px
+Figure {nump}`figure`: bibliographie ISO 690
+```
 
-![image](fichiers_styles/img_03.png){width=300} 
-
-Figure 11 : commandes pour la bibliographie
+```{figure} fichiers_styles/img_03.png
+:width: 300px
+Figure {nump}`figure`: bibliographie APA
+```
 
 Allez tout à la fin du document et cliquez sur :
 
-![image](fichiers_styles/img_22.png)
-
-Figure 12 : insertion d'une bibliographie
+```{figure} fichiers_styles/img_22.png
+:width: 300px
+Figure {nump}`figure`: insertion d'une bibliographie
+```
 
 puis choisissez la 1ère possibilité :
 
-![image](fichiers_styles/img_14.png){width=700} 
-
-Figure 13 : choix du style de bibliographie
+```{figure} fichiers_styles/img_14.png
+:width: 700px
+Figure {nump}`figure`: choix du style de bibliographie
+```
 
 Une nouvelle section va apparaitre à la fin de votre document :
 
-![image](fichiers_styles/img_07.png)
+```{figure} fichiers_styles/img_07.png
+:width: 500px
+Figure {nump}`figure`: nouvelle section
+```
 
 ### Ajouter les sources
 
 Toujours dans Références, cliquer sur Citations :
 
-![image](fichiers_styles/img_23.png)
+```{figure} fichiers_styles/img_23.png
+Figure {nump}`figure`
+```
 
 Une fenêtre s’ouvre à droite :
 
-![image](fichiers_styles/img_18.png){width=400} 
+```{figure} fichiers_styles/img_18.png
+:width: 400px
+Figure {nump}`figure`
+```
 
 Cliquez sur le + pour ajouter vos sources (il faut choisir à chaque fois le type de source) :
 
-![image](fichiers_styles/img_10.png){width=400} 
+```{figure} fichiers_styles/img_10.png
+:width: 400px
+Figure {nump}`figure`
+```
 
 Pour le document sur l’histoire de l’ordinateur, il y a une unique source que vous remplirez de cette manière :
 
-![image](fichiers_styles/img_29.png){width=700} 
-
+```{figure} fichiers_styles/img_29.png
+:width: 700px
+Figure {nump}`figure`
+```
 Vous aurez alors dans la fenêtre des citations :
 
-![image](fichiers_styles/img_05.png){width=300} 
+```{figure} fichiers_styles/img_05.png
+:width: 300px
+Figure {nump}`figure`
+```
 
 ### Citer les sources
 
 Allez ensuite à la fin du titre principal du document puis allez dans Insérer puis :
 
-![image](fichiers_styles/img_24.png){width=100} 
+```{figure} fichiers_styles/img_24.png
+:width: 100px
+Figure {nump}`figure`
+```
 
 puis double-cliquez sur le document que vous voulez citer :
 
-![image](fichiers_styles/img_05.png){width=400} 
+```{figure} fichiers_styles/img_05.png
+:width: 300px
+Figure {nump}`figure`
+```
 
 ### Mettre à jour la bibliographie
 
 Allez ensuite à la fin de votre document où se trouve la section Bibliographie et faites un clic droit puis choisissez « Mettre à jour le champ » :
 
-![image](fichiers_styles/img_15.png){width=700} 
+```{figure} fichiers_styles/img_15.png
+:width: 700px
+Figure {nump}`figure`
+```
 
 La bibliographie va se mettre automatiquement à jour :
 
-![image](fichiers_styles/img_11.png){width=700} 
+```{figure} fichiers_styles/img_11.png
+:width: 500px
+Figure {nump}`figure`
+```
 
-Le résultat final de trouve <a href="fichiers_styles/Histoire_ordinateur_final.pdf">ici</a>
+Vous pouvez télécharger le résultat final : [fichiers_styles/Histoire_ordinateur_brut.pdf](fichiers_styles/Histoire_ordinateur_final.pdf)
