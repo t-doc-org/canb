@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Vous allez travailler avec le document “histoire ordinateur brut.docx”.
+Vous allez travailler avec le document <a href="./fichiers_styles/Histoire_ordinateur_brut.docx">Histoire_ordinateur_brut.docx</a>.
 
 Le but de ce document est de vous guider dans la mise en forme et de vous montrer les fonctionnalités de base des styles qui permettent de présenter efficacement un document long.
 
@@ -235,3 +235,5 @@ Allez ensuite à la fin de votre document où se trouve la section Bibliographie
 La bibliographie va se mettre automatiquement à jour :
 
 ![image](fichiers_styles/img_11.png){width=700} 
+
+Le résultat final de trouve <a href="fichiers_styles/Histoire_ordinateur_final.pdf">ici</a>
