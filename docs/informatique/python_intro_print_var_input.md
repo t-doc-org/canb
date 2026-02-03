@@ -48,7 +48,9 @@ prenom="Eva"
 print("Bonjour", prenom)
 ```
 
-L'intérêt d'une variable est . Par exemple, dans le programme suivant, si la personne ne se nomme pas Eva mais Thimoté, il faut remplacer 3 fois le prénom Eva pour adapter le programme :
+L'intérêt d'une variable est de rendre un programme plus générique i.e. moins dépendant de changements. 
+
+Par exemple, dans le programme suivant, si la personne ne se nomme pas Eva mais Thimoté, il faut remplacer 3 fois le prénom Eva pour que le programme fonctionne avec ce nouveau prénom :
 ```{exec} python
 :linenos:
 print("Bonjour", "Eva")
