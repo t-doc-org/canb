@@ -129,7 +129,7 @@ if a<b:
     print(a, "est plus petit que", b)
 ```
 
-### Instruction `input()
+### Instruction `input()`
 
 #### Définition
 
