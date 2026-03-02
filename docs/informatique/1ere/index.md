@@ -1,4 +1,4 @@
-# Cours d'informatique
+# Cours d'informatique - 1ère
 
 Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 
@@ -9,6 +9,7 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 ## Programmation Python
 
 ```{toctree}
-:maxdepth: 2
-1ere/index
+:maxdepth: 1
+python_intro_print_var_input
+if
 ```
