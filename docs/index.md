@@ -15,5 +15,6 @@ Le site est en cours de développement.
 maths/index
 informatique/index
 bureautique/index
+didactique/index
 ```
 
