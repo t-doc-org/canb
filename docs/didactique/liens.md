@@ -60,7 +60,7 @@
 
 [Python en ligne avec exécution pas à pas](https://pythontutor.com/)
 
-[Jupyter pour python, sql, javascript, etc.)](https://basthon.fr/)
+[Jupyter pour python, sql, javascript, etc.](https://basthon.fr/)
 
 [PGP en ligne - génération de clé RSA/ECC et chiffrement/signature](https://github.com/NajmAjmal/PGP)
 
