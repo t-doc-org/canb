@@ -14,7 +14,7 @@
 
 [CS Unplugged - 2](https://classic.csunplugged.org/books/)
 
-[IRAM Clermond-Ferrand - activités débranchées](https://sancy.iut.uca.fr/~iso/)
+[IREM Clermond-Ferrand - activités débranchées](https://sancy.iut.uca.fr/~iso/)
 
 [Site de Samuel Chalifour - nombreuses activités](https://samuel-chalifour.canoprof.fr/eleve/ateliersdinformatiquedebranchee/)
 
