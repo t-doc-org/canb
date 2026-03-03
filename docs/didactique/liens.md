@@ -55,3 +55,17 @@
 [Research gate](https://www.researchgate.net/search)
 
 [Web of Science](https://www.webofscience.com/wos/)
+
+## Outils
+
+[Python en ligne avec exécution pas à pas](https://pythontutor.com/)
+
+[Jupyter pour python, sql, javascript, etc.)](https://basthon.fr/)
+
+[PGP en ligne - génération de clé RSA/ECC et chiffrement/signature](https://github.com/NajmAjmal/PGP)
+
+[Reeborg - un petit robot pour apprendre la programmation](https://github.com/aroberge/reeborg)
+
+[Codehs - un IDE en ligne pour la programmation collaborative - créer un compte puis utiliser sandbox](https://codehs.com/)
+
+
