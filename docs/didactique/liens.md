@@ -68,7 +68,9 @@
 
 [Codehs - un IDE en ligne pour la programmation collaborative - créer un compte puis utiliser sandbox](https://codehs.com/)
 
-## Divers
+## Vidéos
+
+### Algorithmes
 
 [Exact instructions challenge - vidéo sandwich peanut butter](https://youtu.be/cDA3_5982h8?si=NWntXQcsgsDam6KP)
 
