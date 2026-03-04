@@ -71,3 +71,5 @@
 ## Divers
 
 [Exact instructions challenge - vidéo sandwich peanut butter](https://youtu.be/cDA3_5982h8?si=NWntXQcsgsDam6KP)
+
+[Exact instructions challenge - vidéo ramen](https://youtu.be/UNbzNyZcm-Y?si=LzhpNf6HQI5aLm-C)
