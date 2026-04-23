@@ -13,3 +13,11 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 python_intro_print_var_input
 if
 ```
+
+## Divers
+
+```{toctree}
+:maxdepth: 1
+twine
+```
+
