@@ -12,6 +12,8 @@ Dans ce tutoriel, le scénario suivant va être mis en place :
 - Il poursuit ensuite sont chemin et se retrouve devant une grande muraille dans laquelle se trouve une porte. S'il a la clé, il peut ouvrir la porte, sinon, il doit retourner au début du jeu ;
 - De l'autre côté de la muraille, un sage l'attend pour lui poser une énigme. S'il l'a résoud, il entre au paradis. Sinon, il finit emprisonné pour l'éternité.
 
+Vous pouvez tester l'histoire [ici](twine_histoire.html).
+
 ## Découverte de Twine
 
 ### Créer une nouvelle histoire
@@ -148,7 +150,7 @@ Il est donc possible d'utiliser des titres, d'ajouter des images, etc.
 Pour la page où le joueur se trouve face à une muraille, on pourrait par exemple ajouter l'image d'une muraille :
 ```{figure} images/twine_15.png
 :alt: Twine muraille - 1
-:width: 700px
+:width: 500px
 :align: center
 ```
 ce qui donne l'affichage suivant :
