@@ -12,7 +12,7 @@ Dans ce tutoriel, le scénario suivant va être mis en place :
 - Il poursuit ensuite sont chemin et se retrouve devant une grande muraille dans laquelle se trouve une porte. S'il a la clé, il peut ouvrir la porte, sinon, il doit retourner au début du jeu ;
 - De l'autre côté de la muraille, un sage l'attend pour lui poser une énigme. S'il l'a résoud, il entre au paradis. Sinon, il finit emprisonné pour l'éternité.
 
-Vous pouvez tester l'histoire [ici](twine_histoire.html).
+Vous pouvez tester l'histoire [ici](https://canb.t-doc.org/informatique/1ere/twine_histoire.html).
 
 ## Découverte de Twine
 
