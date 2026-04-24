@@ -118,7 +118,7 @@ Dans notre scénario, si la valeur de ```key``` est ```true```, le joueur contin
 ```
 
 ### Demander une info à l'utilisateur
-Le joueur va se voir poser une énigme. Il va devoir répondre. Pour cela, on va utiliser l'instruction ```prompt``` qui permet d'afficher pop-up et dans lequel le joueur peut entrer du texte. Le résultat de ce prompt sera stocké dans une variable ```réponse``` (cela est similaire à ```réponse=input()```en python) :
+Le joueur va se voir poser une énigme. Il va devoir répondre. Pour cela, on va utiliser l'instruction ```prompt``` qui permet d'afficher pop-up et dans lequel le joueur peut entrer du texte. Le résultat de ce prompt sera stocké dans une variable ```reponse``` (cela est similaire à ```reponse=input()```en python) :
 ```{figure} images/twine_12.png
 :alt: Twine énigme - 1
 :width: 500px
@@ -140,4 +140,20 @@ Voici les différentes pages que nous avons créées avec les liens qui existent
 :align: center
 ```
 
+## Améliorer la présentation
+Dans le contenu de la page, il est possible d'utiliser des balises HTML.
 
+Il est donc possible d'utiliser des titres, d'ajouter des images, etc.
+
+Pour la page où le joueur se trouve face à une muraille, on pourrait par exemple ajouter l'image d'une muraille :
+```{figure} images/twine_15.png
+:alt: Twine muraille - 1
+:width: 700px
+:align: center
+```
+ce qui donne l'affichage suivant :
+```{figure} images/twine_16.png
+:alt: Twine muraille - 1
+:width: 700px
+:align: center
+```
