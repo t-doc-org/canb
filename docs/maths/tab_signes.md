@@ -24,36 +24,21 @@ $h(t) = 12t - \dfrac{1}{2} 9,8 t^2=12t-4,9 t^2$
 
 Pendant combien de temps la balle est-elle au-dessus de 5 mètres ?
 
-Représentez graphiquement la fonction :
+Voici une représentation graphique de la fonction :
 
-```{jsxgraph} fonction-rationnelle
-:style: width: 80%;
+```{jsxgraph} ex1
+:style: aspect-ratio: 16 / 9;
 ```
 
 <script type="module">
-const {defaults, initBoard, JXG, nonInteractive} =
-    await tdoc.import('jsxgraph.js');
-initBoard('fonction-rationnelle', [defaults, nonInteractive, {
-    boundingBox: [-10.5, 10.5, 10.5, -10.5],
-    grid: {majorStep: 1},
-    defaults: {
-        line: {dash: 2},
-        point: {label: {anchorX: 'right', anchorY: 'bottom', offset: [-7, 0]}},
-    },
-}], board => {
-    const f = x => (x ** 2 - 7 * x + 10) / (x ** 2 - 9);
-    board.create('functiongraph', [f], {
-        name: `\\(f\\)`, withLabel: true,
-        label: {position: '0.1fr left'}
-    });
-    board.create('point', [2, f(2)], {name: `\\(x_1\\)`});
-    board.create('point', [5, f(5)], {name: `\\(x_2\\)`});
-    board.create('line', [3, 1, 0]);
-    board.create('line', [-3, 1, 0]);
+const [{initBoard}] = await tdoc.imports('tdoc/jsxgraph.js');
+initBoard('ex1', {
+    boundingBox: [-2, 10, 4, -2], keepAspectRatio: false,
+    axis: true, grid: true,
+}, board => {
+    board.create('functiongraph', [x => 12*x-4.9*x**2]);
 });
 </script>
-
----
 
 ### Rentabilité d’un artisan (économie)
 
@@ -67,6 +52,22 @@ $B(x) = -0,2x^2 + 14x - 100$
 
 Pour quelles valeurs de $x$ l’artisan fait-il un bénéfice positif ?
 
+Voici une représentation graphique de la fonction :
+
+```{jsxgraph} ex2
+:style: aspect-ratio: 16 / 9;
+```
+
+<script type="module">
+const [{initBoard}] = await tdoc.imports('tdoc/jsxgraph.js');
+initBoard('ex2', {
+    boundingBox: [-2, 200, 80, -50], keepAspectRatio: false,
+    axis: true, grid: true,
+}, board => {
+    board.create('functiongraph', [x => -0.2*x**2+14*x-100]);
+});
+</script>
+
 ---
 
 ### Débit d’un bassin pluvial (hydraulique)
@@ -76,7 +77,23 @@ Le débit d’écoulement d’un bassin dépend de la hauteur d'eau :
 $Q(h)= \dfrac{h-20}{h+5},\qquad h \ge 0$
 
 Interprétation :
-  - Q(h) > 0: l’eau s’écoule normalement.
-  - Q(h) < 0: risque de refoulement (l'eau rentre dans la bassin au lieu d'en sortir).
+  - $Q(h) > 0$: l’eau s’écoule normalement.
+  - $Q(h) < 0$: risque de refoulement (l'eau rentre dans la bassin au lieu d'en sortir).
 
 Déterminez pour quelles valeurs de $h$ le bassin risque de refouler.
+
+Voici une représentation graphique de la fonction :
+
+```{jsxgraph} ex3
+:style: aspect-ratio: 16 / 9;
+```
+
+<script type="module">
+const [{initBoard}] = await tdoc.imports('tdoc/jsxgraph.js');
+initBoard('ex3', {
+    boundingBox: [-2, 5, 60, -5], keepAspectRatio: false,
+    axis: true, grid: true,
+}, board => {
+    board.create('functiongraph', [x => (x-20)/(x+5)]);
+});
+</script>
