@@ -133,7 +133,7 @@ Il faut ensuite vérifer si la réponse est correcte. On utilise ici à nouveau 
 ``` 
 
 ## L'histoire complète
-Voici les différentes pages que nous avons créé avec les liens qui existent entre elles :
+Voici les différentes pages que nous avons créées avec les liens qui existent entre elles :
 ```{figure} images/twine_14.png
 :alt: Twine tout
 :width: 700px
