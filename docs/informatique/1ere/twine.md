@@ -171,3 +171,5 @@ ce qui donne l'affichage suivant :
 [Autre tutoriel vidéo](https://www.youtube.com/watch?embed=no&v=Eig-Z-wYdRc)
 
 [Documentation (en anglais)](https://twinery-org.translate.goog/cookbook/index.html?_x_tr_sl=auto&_x_tr_tl=fr&_x_tr_hl=en-US&_x_tr_pto=wapp)
+
+Pour traduire ces tutoriel en allemand, utiliser [Google translate websites](https://translate.google.com/?sl=auto&tl=de&op=websites).
