@@ -1,6 +1,7 @@
 # Cours de didactique de l'informatique
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
+numetsoc
 liens
 ```
