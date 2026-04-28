@@ -26,7 +26,7 @@
 
 [Diverses ressources IA de la HEP Vaud](https://mi.hepl.ch/sites/io/ia.html)
 
-## Méthodes et contenu d'enseignement
+## Méthodes et contenus d'enseignement
 
 [Promoting effective computer pedagogy](https://teachcomputing.org/pedagogy)
 
@@ -44,9 +44,27 @@
 
 [Entretien avec Olivier Goletti - didacticien](https://gitlab.com/profbrice/mooc-didactique-inria/-/blob/main/Entretien_Olivier_Goletti/1_Entretien_Olivier_Goletti1_5.md)
 
-Numérique et environnement
-  - [https://learninglab.gitlabpages.inria.fr/mooc-impacts-num/mooc-impacts-num-ressources/index.html](https://learninglab.gitlabpages.inria.fr/mooc-impacts-num/mooc-impacts-num-ressources/index.html)
+### Numérique et environnement
 
+[MOOC numérique et environnement](https://learninglab.gitlabpages.inria.fr/mooc-impacts-num/mooc-impacts-num-ressources/index.html)
+
+### Protection des données, vie privée
+
+[Préposé fédéral à la protection des données et à la transparence  (PFPDT)](https://www.edoeb.admin.ch/fr/protection-des-donnees)
+
+[Quiz sur le hammeçonnage - 1](https://phishingquiz.withgoogle.com/)
+
+[Quiz sur le hammeçonnage - 2](https://www.ebas.ch/fr/test-sur-le-hameconnage/)
+
+### Brainstorming numérique et société
+
+[Cours 2020-21](https://digipad.app/p/158779/aebfff1f989fc)
+
+[Cours 2023-24](https://digipad.app/p/577463/b18b814b053e2)
+
+### Divers
+
+[RTS - semaine des médias](https://www.e-media.ch/RTS/La-Semaine-des-medias)
 
 ## Sites pour trouver des publications
 
@@ -71,6 +89,8 @@ Numérique et environnement
 [Reeborg - un petit robot pour apprendre la programmation](https://github.com/aroberge/reeborg)
 
 [Codehs - un IDE en ligne pour la programmation collaborative - créer un compte puis utiliser sandbox](https://codehs.com/)
+
+[Soekia GPT - simulateur simplifié de LLM ](https://www.soekia.ch/gpt.html)
 
 ## Vidéos
 
@@ -99,6 +119,10 @@ Numérique et environnement
 [Nanoo.tv](https://www.nanoo.tv/code/recordlist.w22?xf_mode=collection;act_set_hierarchy=0;act_set_collection=3499) Nombreux documentaires en lien avec le numérique
 
 [Liste actuelle des documentaires Nanoo (28.4.26)](listedocusnanoo.pdf)
+
+### IA
+
+[Des IA fiables et frugales, c'est possible ?](https://pixees.fr/des-ia-fiables-et-frugales-cest-possible/)
 
 ### Hardware
 
