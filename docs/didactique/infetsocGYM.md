@@ -58,14 +58,8 @@
 
 ## Liens utiles
 
-- Numérique et environnement
-  - [https://learninglab.gitlabpages.inria.fr/mooc-impacts-num/mooc-impacts-num-ressources/index.html](https://learninglab.gitlabpages.inria.fr/mooc-impacts-num/mooc-impacts-num-ressources/index.html)
-- Documentaires ARTE
-  - [Silicon f***ing Valley](https://youtu.be/_tSFem3SC9I?si=SbYPPK9FDQi1nU7h) Documentaire sur le développement de la Silicon Valley
-  - [L'IA va-t-elle tuer Internet](https://youtu.be/NmPNVaVr_Xs?si=NolIm0ZUVNdqk9Kh) Envahi par un flot de bots, d'images et de vidéos générés par l'intelligence artificielle, Internet croule aujourd'hui sous les contenus synthétiques sans intérêt. Quel avenir attend le Web à l'ère de l'IA ?
-  - [Comprendre la rareté des métaux rares](https://youtu.be/3NR3RDedd5w?si=TA6i3DF23cGeP8CN) Dans cet épisode de Data Science, on se penche sur les métaux rares, nouvel or noir des technologies modernes, des composants omniprésents dans nos smartphones. De leur présence dans la couche terrestre aux enjeux stratégiques de leur extraction, des précisions pour comprendre ce qui fait vraiment leur rareté.
-  - [Autopsie d'une intelligence artificielle](https://www.youtube.com/watch?v=_BVRK5mXYsg) Alors que les algorithmes devaient révolutionner nos vies, les belles promesses des géants de la tech sont-elles en passe d’être tenues ? Un état des lieux documenté des impasses auxquelles se heurte encore l’intelligence artificielle.
-  - [Tiktok un réseau sous influence](https://youtu.be/AyM2QezfeT4?si=gHOqSFq1RkFggkty) L’application la plus téléchargée au monde est-elle le bras armé du Parti communiste chinois ? Comment s’est-elle imposée au coeur de la confrontation commerciale et géopolitique entre Pékin et Washington ? À l'approche de la décision sur l'avenir de Tiktok aux États-Unis, cette plongée dans les arcanes de la plate-forme révèle la guerre des données que se livrent les États. 
-- [Nanoo.tv](https://www.nanoo.tv/code/recordlist.w22?xf_mode=collection;act_set_hierarchy=0;act_set_collection=3499) Nombreux documentaires en lien avec le numérique
-- [Documentaires sur les câbles Internet sous-marins](https://youtu.be/6we2X6fyBAE?si=6BT2r0yWEy35-iHv)
-- [Transcription de vidéos youtube](https://notegpt.io/youtube-transcript-generator) Utile pour générer, à l'aide de l'IA, un questionnaire à donner aux élèves pendant la visualisation de documentaires
+```{toctree}
+:maxdepth: 1
+liens
+```
+

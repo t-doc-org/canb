@@ -29,3 +29,12 @@ Elles abordent des thématiques clés liées aux interactions entre informatique
 Ces objectifs visent à préparer les élèves à naviguer de manière informée et éthique dans un monde de plus en plus numérique.
 
 Pour aller plus loin, consultez aussi : [Éducation numérique – Portail CIIP](https://portail.ciip.ch/per/domains/8)
+
+## Liens utiles
+
+```{toctree}
+:maxdepth: 1
+numetsoc
+liens
+```
+

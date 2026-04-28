@@ -44,6 +44,10 @@
 
 [Entretien avec Olivier Goletti - didacticien](https://gitlab.com/profbrice/mooc-didactique-inria/-/blob/main/Entretien_Olivier_Goletti/1_Entretien_Olivier_Goletti1_5.md)
 
+Numérique et environnement
+  - [https://learninglab.gitlabpages.inria.fr/mooc-impacts-num/mooc-impacts-num-ressources/index.html](https://learninglab.gitlabpages.inria.fr/mooc-impacts-num/mooc-impacts-num-ressources/index.html)
+
+
 ## Sites pour trouver des publications
 
 [SIGCSE - Special Interest Group Computer Science Education](https://sigcse.org/resources/publications.html)
@@ -70,8 +74,33 @@
 
 ## Vidéos
 
+[Transcription de vidéos youtube](https://notegpt.io/youtube-transcript-generator) Utile pour générer, à l'aide de l'IA, un questionnaire à donner aux élèves pendant la visualisation de documentaires
+
 ### Algorithmes
 
 [Exact instructions challenge - vidéo sandwich peanut butter](https://youtu.be/cDA3_5982h8?si=NWntXQcsgsDam6KP)
 
 [Exact instructions challenge - vidéo ramen](https://youtu.be/UNbzNyZcm-Y?si=LzhpNf6HQI5aLm-C)
+
+### Documentaires ARTE
+
+[Silicon f***ing Valley](https://youtu.be/_tSFem3SC9I?si=SbYPPK9FDQi1nU7h) Documentaire sur le développement de la Silicon Valley
+
+[L'IA va-t-elle tuer Internet](https://youtu.be/NmPNVaVr_Xs?si=NolIm0ZUVNdqk9Kh) Envahi par un flot de bots, d'images et de vidéos générés par l'intelligence artificielle, Internet croule aujourd'hui so>
+
+[Comprendre la rareté des métaux rares](https://youtu.be/3NR3RDedd5w?si=TA6i3DF23cGeP8CN) Dans cet épisode de Data Science, on se penche sur les métaux rares, nouvel or noir des technologies modernes, d>
+
+[Autopsie d'une intelligence artificielle](https://www.youtube.com/watch?v=_BVRK5mXYsg) Alors que les algorithmes devaient révolutionner nos vies, les belles promesses des géants de la tech sont-elles e>
+
+[Tiktok un réseau sous influence](https://youtu.be/AyM2QezfeT4?si=gHOqSFq1RkFggkty) L’application la plus téléchargée au monde est-elle le bras armé du Parti communiste chinois ? Comment s’est-elle impo>
+
+### Nanoo.tv
+
+[Nanoo.tv](https://www.nanoo.tv/code/recordlist.w22?xf_mode=collection;act_set_hierarchy=0;act_set_collection=3499) Nombreux documentaires en lien avec le numérique
+
+[Liste actuelle des documentaires Nanoo (28.4.26)](listedocusnanoo.pdf)
+
+### Hardware
+
+[Documentaires sur les câbles Internet sous-marins](https://youtu.be/6we2X6fyBAE?si=6BT2r0yWEy35-iHv)
+
