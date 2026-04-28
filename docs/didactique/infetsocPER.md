@@ -32,9 +32,4 @@ Pour aller plus loin, consultez aussi : [Éducation numérique – Portail CIIP]
 
 ## Liens utiles
 
-```{toctree}
-:maxdepth: 1
-numetsoc
-liens
-```
-
+[Liens utiles](liens)

@@ -58,8 +58,4 @@
 
 ## Liens utiles
 
-```{toctree}
-:maxdepth: 1
-liens
-```
-
+[Liens utiles](liens)
