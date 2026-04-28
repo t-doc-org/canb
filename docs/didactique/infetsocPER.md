@@ -1,4 +1,4 @@
-# Thématiques abordées dans le PER – Informatique et société  
+# Thématiques abordées dans le PER
 
 (généré à l'aide de ChatGPT)
 
