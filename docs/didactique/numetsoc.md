@@ -7,5 +7,6 @@ livres
 jeunessedebat
 prendreconscience
 infetsocPER
+infetsocGYM
 ```
 
