@@ -92,6 +92,8 @@
 
 [Soekia GPT - simulateur simplifié de LLM ](https://www.soekia.ch/gpt.html)
 
+[Turing tumble](https://upperstory.com/fr/turingtumble/)
+
 ## Vidéos
 
 [Transcription de vidéos youtube](https://notegpt.io/youtube-transcript-generator) Utile pour générer, à l'aide de l'IA, un questionnaire à donner aux élèves pendant la visualisation de documentaires
