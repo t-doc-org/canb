@@ -48,13 +48,27 @@
 
 [MOOC numérique et environnement](https://learninglab.gitlabpages.inria.fr/mooc-impacts-num/mooc-impacts-num-ressources/index.html)
 
-### Protection des données, vie privée
+### Protection des données, vie privée, cybersécurité
 
 [Préposé fédéral à la protection des données et à la transparence  (PFPDT)](https://www.edoeb.admin.ch/fr/protection-des-donnees)
+
+[Office fédéral de la cybersécurité](https://www.ncsc.admin.ch/ncsc/fr/home.html)
 
 [Quiz sur le hammeçonnage - 1](https://phishingquiz.withgoogle.com/)
 
 [Quiz sur le hammeçonnage - 2](https://www.ebas.ch/fr/test-sur-le-hameconnage/)
+
+### Cybersécurité
+
+Bonnes pratique en terme de protection des données :
+  - [Pourquoi et comment bien gérer ses mots de passe ?](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe)
+  - [Les bonnes pratiques pour naviguer sur Internet](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/les-bonnes-pratiques-pour-naviguer-sur-internet)
+  - [La sécurité sur les réseaux sociaux](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/reseaux-sociaux)
+  - [Protéger ses appareils mobiles](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/appareils-mobiles)
+  - [Pourquoi et comment bien gérer ses mises à jour ?](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mises-a-jour)
+  - [Les antivirus](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/antivirus)
+  - [Pourquoi et comment bien gérer ses sauvegardes ?](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/sauvegardes)
+  - [Synthèse](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/10-mesures-essentielles-assurer-securite-numerique)
 
 ### Brainstorming numérique et société
 
@@ -130,3 +144,11 @@
 
 [Documentaires sur les câbles Internet sous-marins](https://youtu.be/6we2X6fyBAE?si=6BT2r0yWEy35-iHv)
 
+### Cybersécurité
+
+Une bonne hygiène numérique (tiré de [TOUS CONNECTÉS : comment protéger sa vie privée ? - L'Esprit Sorcier](https://youtu.be/LU5Pynklu5k)) :
+  - [Choisir un bon mot de passe](https://player.vimeo.com/video/254343316?title=0&byline=0&portrait=0)
+  - [Se méfier des cookies](https://player.vimeo.com/video/254343345?title=0&byline=0&portrait=0)
+  - [Protéger son smartphone](https://player.vimeo.com/video/254343367?title=0&byline=0&portrait=0)
+  - [Identifier les emails malveillants](https://player.vimeo.com/video/254343351?title=0&byline=0&portrait=0)
+  - [Réseaux sociaux](https://player.vimeo.com/video/254343376?title=0&byline=0&portrait=0)
