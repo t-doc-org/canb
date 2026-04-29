@@ -108,6 +108,8 @@ Bonnes pratique en terme de protection des données :
 
 [Turing tumble](https://upperstory.com/fr/turingtumble/)
 
+[Outil de création de groupes](https://www.keamk.com/fr/)
+
 ## Vidéos
 
 [Transcription de vidéos youtube](https://notegpt.io/youtube-transcript-generator) Utile pour générer, à l'aide de l'IA, un questionnaire à donner aux élèves pendant la visualisation de documentaires
