@@ -162,13 +162,13 @@ ce qui donne l'affichage suivant :
 
 ## Ressources supplémentaires
 
-[Tutoriel vidéo 1/3](https://www.fiction-interactive.fr/tutoriel-premier-jeu-en-twine/)
+[Tutoriel 1/3](https://www.fiction-interactive.fr/tutoriel-premier-jeu-en-twine/)
 
-[Tutoriel vidéo 1/3](https://www.fiction-interactive.fr/tutoriel-twine-premieres-macros-et-structures-conditionnelles/)
+[Tutoriel 1/3](https://www.fiction-interactive.fr/tutoriel-twine-premieres-macros-et-structures-conditionnelles/)
 
-[Tutoriel vidéo 1/3](https://www.fiction-interactive.fr/tutoriel-twine-2-les-variables/)
+[Tutoriel 1/3](https://www.fiction-interactive.fr/tutoriel-twine-2-les-variables/)
 
-[Autre tutoriel vidéo](https://www.youtube.com/watch?embed=no&v=Eig-Z-wYdRc)
+[Autre tutoriel (vidéo)](https://www.youtube.com/watch?embed=no&v=Eig-Z-wYdRc)
 
 [Documentation (en anglais)](https://twinery-org.translate.goog/cookbook/index.html?_x_tr_sl=auto&_x_tr_tl=fr&_x_tr_hl=en-US&_x_tr_pto=wapp)
 
