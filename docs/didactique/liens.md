@@ -76,6 +76,10 @@ Bonnes pratique en terme de protection des données :
 
 [Cours 2023-24](https://digipad.app/p/577463/b18b814b053e2)
 
+[Cours 2025-26 - 1](https://digipad.app/p/1688962/63c5ee737c1c38)
+
+[Cours 2025-26 - 2](https://digipad.app/p/1695491/05ae0110da0228)
+
 ### Divers
 
 [RTS - semaine des médias](https://www.e-media.ch/RTS/La-Semaine-des-medias)
@@ -125,6 +129,8 @@ Bonnes pratique en terme de protection des données :
 [Exact instructions challenge - vidéo sandwich peanut butter](https://youtu.be/cDA3_5982h8?si=NWntXQcsgsDam6KP)
 
 [Exact instructions challenge - vidéo ramen](https://youtu.be/UNbzNyZcm-Y?si=LzhpNf6HQI5aLm-C)
+
+[La fabrique à idiots](https://youtu.be/4xq6bVbS-Pw) L'IA ne va pas nous remplacer : elle va nous rendre idiots
 
 ### Documentaires ARTE
 
