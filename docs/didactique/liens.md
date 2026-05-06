@@ -80,6 +80,8 @@ Bonnes pratique en terme de protection des données :
 
 [RTS - semaine des médias](https://www.e-media.ch/RTS/La-Semaine-des-medias)
 
+[Digiharmo](https://www.digiharmo.ch/) : site qui répertorie toutes sorte de bonnes pratiques dans le but de guider enfants et ados vers un usage équilibré et réfléchi des écrans
+
 ## Sites pour trouver des publications
 
 [SIGCSE - Special Interest Group Computer Science Education](https://sigcse.org/resources/publications.html)
