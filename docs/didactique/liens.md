@@ -167,6 +167,12 @@ Une bonne hygiène numérique (tiré de [TOUS CONNECTÉS : comment protéger sa 
   - [Identifier les emails malveillants](https://player.vimeo.com/video/254343351?title=0&byline=0&portrait=0)
   - [Réseaux sociaux](https://player.vimeo.com/video/254343376?title=0&byline=0&portrait=0)
 
+### Podcasts
+
+[Le code a changé](https://www.radiofrance.fr/franceinter/podcasts/le-code-a-change)
+
+[Underscore_](https://podcasts.apple.com/fr/podcast/underscore/id1556250107)
+
 ### Divers
 
 [Epicurieux](https://www.youtube.com/channel/UCG9G2dyRv04FDSH1FSYuLBg)
