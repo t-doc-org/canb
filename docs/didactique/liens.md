@@ -112,6 +112,10 @@ Bonnes pratique en terme de protection des données :
 
 [Outil de création de groupes](https://www.keamk.com/fr/)
 
+[La digitale](https://ladigitale.dev/) : outils libres pour l'enseignement
+
+[Framasoft](https://framasoft.org/fr/) : outils libres
+
 ## Vidéos
 
 [Transcription de vidéos youtube](https://notegpt.io/youtube-transcript-generator) Utile pour générer, à l'aide de l'IA, un questionnaire à donner aux élèves pendant la visualisation de documentaires
