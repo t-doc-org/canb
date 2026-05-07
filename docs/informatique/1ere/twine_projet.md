@@ -8,9 +8,9 @@ A disposition le [tutoriel](twine) vu en classe.
 
 ## Suivi du projet
 
-- Lors du 1er cours, créer un dossier partagé avec l'enseignant sur OneDrive (nom du dossier : Classe_Twine_Prenom_Nom - par exemple 1F4_Twine_Lea_Dupond)
+- Lors du 1er cours, **créer un dossier partagé** avec l'enseignant sur OneDrive (nom du dossier : Classe_Twine_Prenom_Nom - par exemple 1F4_Twine_Lea_Dupond)
 - Le travail sera effectué uniquement durant les cours
-- A la fin de chaque cours, déposer le fichier du projet (menu Build -> Export as Twee) puis déposer le fichier en y ajoutant la date sous la forme AAAAMMJJ (AA = année, MM = mois, JJ = jour) - par exemple 20260507 pour le 7 mai 2026
+- **A la fin de chaque cours**, déposer le fichier du projet (menu Build -> Export as Twee) puis déposer le fichier en y ajoutant la date sous la forme AAAAMMJJ (AA = année, MM = mois, JJ = jour) - par exemple 20260507 pour le 7 mai 2026
 
 ## Rendu du projet
 
