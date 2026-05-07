@@ -1,6 +1,6 @@
 # Projet Twine
 
-## Obectifs
+## Objectifs
 
 Le but de ce projet est de créer une histoire interactive à l’aide de Twine dans laquelle le lecteur peut faire des choix qui influencent le déroulement du récit.
 
