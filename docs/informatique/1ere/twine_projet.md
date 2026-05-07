@@ -22,7 +22,7 @@ A disposition le [tutoriel](twine) vu en classe.
 | L'histoire contient 4 chemins différents | **1 pt** |
 | L'histoire contient 2 fins différentes | **1pt** |
 | L'histoire est cohérente | **1pt** |
-| Le texte est soigné | **2pt** | 
+| Le texte est soigné (français/allemand correct, phrases élaborées) | **2pt** | 
 | L'histoire utilise une variable pour garder un élément en mémoire qui est utilisé dans une autre page | **1pt** |
 | L'histoire utilise un ```prompt``` (demande d'information au joueur) | **1pt** |
 | L'histoire utilise une variable pour le prompt afin de prendre une décision en fonction de la réponse du joueur | **1pt** |
