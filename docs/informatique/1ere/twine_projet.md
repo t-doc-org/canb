@@ -12,6 +12,16 @@ A disposition le [tutoriel](twine) vu en classe.
 - Le travail sera effectué uniquement durant les cours
 - A la fin de chaque cours, déposer le fichier du projet (menu Build -> Export as Twee) puis déposer le fichier en y ajoutant la date sous la forme AAAAMMJJ (AA = année, MM = mois, JJ = jour) - par exemple 20260507 pour le 7 mai 2026
 
+## Rendu du projet
+
+Délai : 
+- 1BP1 : 11.6.2026 à 14:05 (à la fin du cours)
+- 1F3 : 15.6.2026 à 10:30 (à la fin du cours)
+
+Le travail doit être fait régulièrement. Le manque de régularité sera pénalisé dans la note.
+
+Toute utilisation de l'IA sera pénalisée de la note 1. Ainsi, utiliser un concept qui n'est pas présent dans le tutoriel doit être annoncé **durant** les cours et êtr>
+
 ## Barème
 
 ### Pour obtenir un 4
@@ -49,14 +59,3 @@ A disposition le [tutoriel](twine) vu en classe.
 
 **Total possible : 20 points possibles pour atteindre 6**
 
-## Rendu du projet
-
-Pour rendre votre projet, 
-
-Délai : 
-- 1BP1 : 11.6.2026 à 14:05 (à la fin du cours)
-- 1F3 : 15.6.2026 à 10:30 (à la fin du cours)
-
-Le travail doit être fait régulièrement. Le manque de régularité sera pénalisé dans la note.
-
-Toute utilisation de l'IA sera pénalisée de la note 1. Ainsi, utiliser un concept qui n'est pas présent dans le tutoriel doit être annoncé **durant** les cours et être ajouté avec l'accord de l'enseignant. Dans le cas contraire, l'utilisation de ces concepts sera considérée comme du plagiat.
