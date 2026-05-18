@@ -20,7 +20,7 @@ Délai :
 
 Le travail doit être fait régulièrement. Le manque de régularité sera pénalisé dans la note.
 
-Toute utilisation de l'IA sera pénalisée de la note 1. Ainsi, utiliser un concept qui n'est pas présent dans le tutoriel doit être annoncé **durant** les cours et êtr>
+Toute utilisation de l'IA sera pénalisée de la note 1. Ainsi, utiliser un concept qui n'est pas présent dans le tutoriel doit être annoncé **durant** les cours et être discuté avec l'enseignant.
 
 ## Barème
 
