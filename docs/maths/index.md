@@ -30,4 +30,6 @@ tab_signes_corrige
 
 <a href="../_static/fonc_quad_exos.html" target="_blank">Fonctions quadratiques - exercices</a>
 
+<a href="../_static/comp_carre.html" target="_blank">Complétion du carré - illustration</a>
+
 <a href="../_static/comp_carre_exos.html" target="_blank">Complétion du carré - exercices</a>
