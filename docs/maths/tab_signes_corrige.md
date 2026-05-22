@@ -9,7 +9,7 @@ subject: "Mathématiques 2e année"
 
 ---
 
-# 1. Corrigé — Trajectoire d’une balle
+## 1. Corrigé — Trajectoire d’une balle
 
 On résout :
 
@@ -28,7 +28,7 @@ Racines :
 t_1 pprox 0.51,\qquad t_2 pprox 2.00.
 \]
 
-## Tableau de signes
+### Tableau de signes
 
 ```{flex-table}
 :class: function-table
@@ -39,7 +39,7 @@ t_1 pprox 0.51,\qquad t_2 pprox 2.00.
 |$\text{Produit}$|$-$|{.g}|$+$|{.g}|$-$
 ```
 
-### **Conclusion**
+#### **Conclusion**
 
 \[
 0.51 < t < 2.00
@@ -47,7 +47,7 @@ t_1 pprox 0.51,\qquad t_2 pprox 2.00.
 
 ---
 
-# 2. Corrigé — Rentabilité d’un artisan
+## 2. Corrigé — Rentabilité d’un artisan
 
 On résout :
 
@@ -62,7 +62,7 @@ Racines :
 x_1 pprox 9.13,\qquad x_2 pprox 54.87.
 \]
 
-## Tableau de signes
+### Tableau de signes
 
 ```{flex-table}
 :class: function-table
@@ -73,7 +73,7 @@ x_1 pprox 9.13,\qquad x_2 pprox 54.87.
 |$\text{Produit}$|$-$|{.g}|$+$|{.g}|$-$
 ```
 
-### **Conclusion**
+#### **Conclusion**
 
 \[
 9 \le x \le 55
@@ -81,11 +81,11 @@ x_1 pprox 9.13,\qquad x_2 pprox 54.87.
 
 ---
 
-# 3. Corrigé — Débit d’un bassin pluvial
+## 3. Corrigé — Débit d’un bassin pluvial
 
 Numérateur nul : \(h=20\).
 
-## Tableau de signes
+### Tableau de signes
 
 ```{flex-table}
 :class: function-table
@@ -95,7 +95,7 @@ Numérateur nul : \(h=20\).
 |$\text{Quotient}$|$-$|{.g}|$+$
 ```
 
-### **Conclusion**
+#### **Conclusion**
 
 \[
 0 \le h < 20
