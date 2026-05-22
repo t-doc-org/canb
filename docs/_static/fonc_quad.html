@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Fonction quadratique interactive</title>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<style>
+body {
+    font-family: "Segoe UI", Arial;
+    background: #f5f7fb;
+    margin: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.form-box {
+    background: #f0f3fa;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.orange { color: #e67e22; font-weight: bold; }
+.green { color: #27ae60; font-weight: bold; }
+.red { color: #e74c3c; font-weight: bold; }
+
+canvas {
+    display: block;
+    margin: 25px auto;
+}
+
+.form-box p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Fonction quadratique : ax² + bx + c</h2>
+
+a = <input id="a" value="1">
+b = <input id="b" value="6">
+c = <input id="c" value="5">
+
+<h3>Formes de la fonction</h3>
+
+<div class="form-box" id="developpee"></div>
+<div class="form-box" id="canonique"></div>
+<div class="form-box" id="factorisee"></div>
+
+<h3>Points caractéristiques</h3>
+<p id="points"></p>
+
+<canvas id="graph" width="700" height="400"></canvas>
+
+<h3>Résumé</h3>
+
+<div class="form-box">
+    <p><strong>Forme développée :</strong> 
+    \( f(x)=ax^2+bx+c \)  
+    → <span class="orange">c est l’ordonnée à l’origine</span></p>
+
+    <p><strong>Forme canonique :</strong> 
+    \( f(x)=a(x-h)^2+k \)  
+    → <span class="green">sommet = (h ; k)</span></p>
+
+    <p><strong>Forme factorisée :</strong> 
+    \( f(x)=a(x-x_1)(x-x_2) \)  
+    → <span class="red">zéros = \(x_1\) et \(x_2\)</span></p>
+</div>
+
+</div>
+
+<script>
+
+let chart;
+
+/* ===== format propre ===== */
+function fmt(x) {
+    return Number.isInteger(x) ? x : x.toFixed(2);
+}
+
+/* ===== forme développée ===== */
+function formatDeveloppee(a,b,c) {
+    let res = "";
+
+    // ax²
+    if (a === 1) res += "x²";
+    else if (a === -1) res += "-x²";
+    else res += `${a}x²`;
+
+    // bx
+    if (b !== 0) {
+        if (b > 0) res += " + " + (b === 1 ? "x" : `${b}x`);
+        else res += " - " + (Math.abs(b) === 1 ? "x" : `${Math.abs(b)}x`);
+    }
+
+    // c
+    if (c !== 0) {
+        if (c > 0) res += ` + ${c}`;
+        else res += ` - ${Math.abs(c)}`;
+    }
+
+    return res;
+}
+
+/* ===== coefficient devant parenthèses ===== */
+function coeffStr(a) {
+    if (a === 1) return "";
+    if (a === -1) return "-";
+    return a;
+}
+
+/* ===== plugins ===== */
+const axesPlugin = {
+    id: 'axes',
+    afterDraw(chart) {
+        const {ctx, scales: {x, y}} = chart;
+        ctx.save();
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2;
+
+        if (y.min <= 0 && y.max >= 0) {
+            let y0 = y.getPixelForValue(0);
+            ctx.beginPath();
+            ctx.moveTo(x.left, y0);
+            ctx.lineTo(x.right, y0);
+            ctx.stroke();
+        }
+
+        if (x.min <= 0 && x.max >= 0) {
+            let x0 = x.getPixelForValue(0);
+            ctx.beginPath();
+            ctx.moveTo(x0, y.top);
+            ctx.lineTo(x0, y.bottom);
+            ctx.stroke();
+        }
+
+        ctx.restore();
+    }
+};
+
+/* ===== labels avec nom + coordonnées ===== */
+const labelsPlugin = {
+    id: 'labels',
+    afterDatasetsDraw(chart) {
+        const {ctx} = chart;
+        ctx.save();
+        ctx.font = "13px Arial";
+
+        chart.data.datasets[1].data.forEach(pt => {
+            let xPixel = chart.scales.x.getPixelForValue(pt.x);
+            let yPixel = chart.scales.y.getPixelForValue(pt.y);
+
+            ctx.fillStyle = pt.color;
+
+            let texte = `${pt.label} (${fmt(pt.x)}, ${fmt(pt.y)})`;
+            ctx.fillText(texte, xPixel + 6, yPixel - 6);
+        });
+
+        ctx.restore();
+    }
+};
+
+/* ===== update auto ===== */
+document.querySelectorAll("input").forEach(input =>
+    input.addEventListener("input", update)
+);
+
+function update() {
+
+    let a = parseFloat(aInput.value);
+    let b = parseFloat(bInput.value);
+    let c = parseFloat(cInput.value);
+
+    if (a === 0) return;
+
+    let xv = -b/(2*a);
+    let yv = a*xv*xv + b*xv + c;
+
+    let delta = b*b - 4*a*c;
+    let racines = [];
+
+    // ===== formes =====
+
+    document.getElementById("developpee").innerHTML =
+    `Forme développée : f(x) = ${formatDeveloppee(a,b,c).replace(
+        `${c}`, `<span class="orange">${c}</span>`
+    )}`;
+
+	let canoniqueClassique =
+	`${coeffStr(a)}(x ${xv >= 0 ? "-" : "+"} ${fmt(Math.abs(xv))})² + ${fmt(yv)}`;
+
+	let canoniqueExplicite =
+	`${coeffStr(a)}(x - <span class="green">${fmt(xv)}</span>)² + <span class="green">${fmt(yv)}</span>`;
+
+	document.getElementById("canonique").innerHTML =
+	`<b>Forme canonique :</b><br>
+	f(x)=${canoniqueClassique}<br>
+	<span style="opacity:0.7">f(x)=${canoniqueExplicite}</span>`;
+
+
+    let factorisee = "";
+
+
+	if (delta > 0) {
+		let x1 = (-b - Math.sqrt(delta))/(2*a);
+		let x2 = (-b + Math.sqrt(delta))/(2*a);
+		racines = [x1,x2];
+
+		let fClassique =
+		`f(x)=${coeffStr(a)}(x ${x1>=0?"-":"+"} ${fmt(Math.abs(x1))})(x ${x2>=0?"-":"+"} ${fmt(Math.abs(x2))})`;
+
+		let fExplicite =
+		`f(x)=${coeffStr(a)}(x - <span class="red">${fmt(x1)}</span>)(x - <span class="red">${fmt(x2)}</span>)`;
+
+		factorisee =
+		`<b>Forme factorisée :</b><br>
+		${fClassique}<br>
+		<span style="opacity:0.7">${fExplicite}</span>`;
+	}
+
+
+    document.getElementById("factorisee").innerHTML = factorisee;
+
+    document.getElementById("points").innerHTML =
+    `<span class="green">Sommet</span> : (${fmt(xv)}, ${fmt(yv)})<br>
+     <span class="orange">Ordonnée</span> : (0, ${c})<br>
+     <span class="red">Zéros</span> : ${racines.map(r => fmt(r)).join(", ")}`;
+
+    drawGraph(a,b,c,xv,yv,racines);
+    
+    
+	if (window.MathJax) {
+		MathJax.typeset();
+}
+
+}
+
+function drawGraph(a,b,c,xv,yv,racines) {
+
+    let xmin = xv - 5;
+    let xmax = xv + 5;
+
+    racines.forEach(r => {
+        xmin = Math.min(xmin, r - 2);
+        xmax = Math.max(xmax, r + 2);
+    });
+
+    let data = [];
+    let ymin = Infinity;
+    let ymax = -Infinity;
+
+    for (let x = xmin; x <= xmax; x += 0.1) {
+        let y = a*x*x + b*x + c;
+        data.push({x,y});
+
+        ymin = Math.min(ymin,y);
+        ymax = Math.max(ymax,y);
+    }
+
+    let marge = (ymax - ymin)*0.2;
+    ymin -= marge;
+    ymax += marge;
+
+    let points = [
+        {x:0, y:c, label:"Ord. orig.", color:"#e67e22"},
+        {x:xv, y:yv, label:"Sommet", color:"#27ae60"}
+    ];
+
+    racines.forEach(x =>
+        points.push({x:x, y:0, label:"Zéro", color:"#e74c3c"})
+    );
+
+    if (chart) chart.destroy();
+
+    chart = new Chart(graph, {
+        type: "scatter",
+        data: {
+            datasets: [
+                {
+                    data,
+                    showLine:true,
+                    borderColor:"blue",
+                    borderWidth:2,
+                    pointRadius:0
+                },
+                {
+                    data: points,
+                    pointRadius:5,
+                    backgroundColor: points.map(p=>p.color)
+                }
+            ]
+        },
+        options: {
+            responsive:false,
+            plugins:{ legend:{display:false}},
+            scales:{
+    x:{
+        min:xmin,
+        max:xmax,
+        ticks: {
+            display: true   // on garde les x (optionnel)
+        },
+        grid: {
+            color: "#ddd"
+        }
+    },
+    y:{
+        min:ymin,
+        max:ymax,
+        ticks: {
+            display: false  // 🔴 enlève les valeurs à gauche
+        },
+        grid: {
+            color: "#ddd"
+        }
+    }
+}
+        },
+        plugins:[axesPlugin, labelsPlugin]
+    });
+}
+
+/* init */
+const aInput = document.getElementById("a");
+const bInput = document.getElementById("b");
+const cInput = document.getElementById("c");
+
+update();
+
+</script>
+
+</body>
+</html>
+``

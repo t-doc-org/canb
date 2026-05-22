@@ -22,3 +22,6 @@ tab_signes
 tab_signes_corrige
 ```
 
+<a href="../_static/fonc_quad.html" target="_blank">Fonctions quadratiques - illustration</a>
+
+<a href="../_static/fonc_quad_exos.html" target="_blank">Fonctions quadratiques - exercices</a>

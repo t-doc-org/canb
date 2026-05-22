@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Exercice fonction quadratique</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+body {
+    font-family: "Segoe UI", Arial;
+    background: linear-gradient(135deg, #eef2f7, #dfe6f1);
+    margin: 0;
+}
+
+.container {
+    max-width: 950px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* titres */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h4 {
+    margin-bottom: 8px;
+}
+
+/* blocs */
+.box {
+    background: #f4f7ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.box:hover {
+    background: #eaf0ff;
+}
+
+/* affichage des formules */
+.box div, .formula {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* inputs */
+input {
+    width: 55px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input.good {
+    border: 2px solid #2ecc71;
+    background: #ecfff5;
+}
+
+input.bad {
+    border: 2px solid #e74c3c;
+    background: #fff0f0;
+}
+
+input:disabled {
+    background: #eee;
+    color: #555;
+}
+
+/* select */
+select {
+    display: block;
+    margin: 10px auto;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* boutons */
+button {
+    padding: 10px 16px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* feedback */
+#feedback {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* graphique */
+canvas {
+    display: block;
+    margin: 25px auto;
+}
+
+/* mise en colonne légère */
+@media (min-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    h2, #given, #feedback, canvas, button {
+        grid-column: span 2;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Compléter les formes</h2>
+
+<p id="given"></p>
+
+<div class="box">
+<h4>Développée</h4>
+f(x)=<input id="a1">x² + <input id="b1">x + <input id="c1">
+</div>
+
+<div class="box">
+<h4>Canonique</h4>
+f(x)=<input id="a2">(x - <input id="h">)² + <input id="k">
+</div>
+
+<div class="box">
+<h4>Factorisée</h4>
+
+<select id="typeFac">
+<option value="2">Deux solutions</option>
+<option value="1">Solution double</option>
+<option value="0">Aucune solution</option>
+</select>
+
+<div class="formula">
+
+<span id="facInputs">
+f(x)=
+<input id="a3">(x - <input id="x1">)
+<span id="secondRoot">(x - <input id="x2">)</span>
+<span id="square">²</span>
+</span>
+
+<span id="noFac" style="display:none">
+<i>Pas factorisable (dans ℝ)</i>
+</span>
+
+</div>
+
+</div>
+
+<button onclick="check()">Valider</button>
+<button onclick="newExercise()">Nouvel exercice</button>
+
+<p id="feedback"></p>
+
+<canvas id="graph" width="700" height="400" style="display:none"></canvas>
+
+</div>
+
+<script>
+
+let a,b,c,xv,yv,r1,r2,delta,typeSolution,chart;
+
+/* ===== AFFICHAGE DYNAMIQUE ===== */
+function updateFacDisplay(){
+
+    // reset
+    facInputs.style.display = "inline";
+    noFac.style.display = "none";
+    x1.style.display = "inline";
+    secondRoot.style.display = "none";
+    square.style.display = "none";
+
+    if(typeFac.value==="2"){
+        secondRoot.style.display = "inline";
+    }
+
+    if(typeFac.value==="1"){
+        square.style.display = "inline";
+    }
+
+    if(typeFac.value==="0"){
+        facInputs.style.display = "none";
+        noFac.style.display = "inline";
+    }
+}
+
+/* ===== EXERCICE ===== */
+function newExercise(){
+
+    r1 = Math.floor(Math.random()*6 - 3);
+    r2 = Math.floor(Math.random()*6 + 1);
+
+    a=1;
+    b=-(r1+r2);
+    c=r1*r2;
+
+    xv=-b/(2*a);
+    yv=a*xv*xv+b*xv+c;
+
+    delta=b*b-4*a*c;
+
+    if(delta>0) typeSolution="2";
+    else if(delta===0) typeSolution="1";
+    else typeSolution="0";
+
+    document.querySelectorAll("input").forEach(i=>{
+        i.value="";
+        i.className="";
+        i.disabled=false;
+    });
+
+    typeFac.value=typeSolution;
+    updateFacDisplay();
+
+    let type=Math.floor(Math.random()*3);
+
+    if(type===0){
+        given.innerHTML="<b>Forme développée donnée</b>";
+        a1.value=a; b1.value=b; c1.value=c;
+        a1.disabled=b1.disabled=c1.disabled=true;
+    }
+
+    if(type===1){
+        given.innerHTML="<b>Forme canonique donnée</b>";
+        a2.value=a; h.value=xv; k.value=yv;
+        a2.disabled=h.disabled=k.disabled=true;
+    }
+
+    if(type===2){
+        given.innerHTML="<b>Forme factorisée donnée</b>";
+
+        a3.value=a;
+        x1.value=r1;
+
+        if(typeSolution==="2"){
+            x2.value=r2;
+            x2.disabled=true;
+        }
+
+        if(typeSolution==="1"){
+            // racine double
+        }
+
+        a3.disabled=true;
+        x1.disabled=true;
+    }
+
+    graph.style.display="none";
+    feedback.innerHTML="";
+}
+
+/* ===== CHECK ===== */
+function check(){
+
+    let ok=true;
+
+    function test(id,val){
+        let el=document.getElementById(id);
+        if(!el || el.disabled) return;
+        if(Math.abs(parseFloat(el.value)-val)<0.1){
+            el.className="good";
+        } else {
+            el.className="bad";
+            ok=false;
+        }
+    }
+
+    test("a1",a);
+    test("b1",b);
+    test("c1",c);
+
+    test("a2",a);
+    test("h",xv);
+    test("k",yv);
+
+    test("a3",a);
+
+    if(typeSolution==="2"){
+        let v1=parseFloat(x1.value);
+        let v2=parseFloat(x2.value);
+
+        let okRoots=(
+            (Math.abs(v1-r1)<0.1 && Math.abs(v2-r2)<0.1) ||
+            (Math.abs(v1-r2)<0.1 && Math.abs(v2-r1)<0.1)
+        );
+
+        if(!okRoots) ok=false;
+    }
+
+    if(typeSolution==="1"){
+        let v=parseFloat(x1.value);
+        if(Math.abs(v-r1)>0.1) ok=false;
+    }
+
+    if(typeFac.value!==typeSolution) ok=false;
+
+    if(ok){
+        feedback.innerHTML="✅ Correct";
+        drawGraph();
+        graph.style.display="block";
+    } else {
+        feedback.innerHTML="❌ Corrige";
+    }
+}
+
+/* ===== AXES ===== */
+const axesPlugin={
+    id:'axes',
+    afterDraw(c){
+        let {ctx,scales:{x,y}}=c;
+        ctx.strokeStyle="black";
+        ctx.lineWidth=2;
+
+        let y0=y.getPixelForValue(0);
+        ctx.beginPath(); ctx.moveTo(x.left,y0);
+        ctx.lineTo(x.right,y0); ctx.stroke();
+
+        let x0=x.getPixelForValue(0);
+        ctx.beginPath(); ctx.moveTo(x0,y.top);
+        ctx.lineTo(x0,y.bottom); ctx.stroke();
+    }
+};
+
+/* ===== GRAPH ===== */
+function drawGraph(){
+
+    let data=[];
+    for(let x=-10;x<10;x+=0.1){
+        data.push({x,y:a*x*x+b*x+c});
+    }
+
+    let pts=[
+        {x:0,y:c},
+        {x:xv,y:yv}
+    ];
+
+    if(delta>=0){
+        pts.push({x:r1,y:0});
+        if(delta>0) pts.push({x:r2,y:0});
+    }
+
+    if(chart) chart.destroy();
+
+    chart=new Chart(graph,{
+        type:"scatter",
+        data:{
+            datasets:[
+                {data,showLine:true,borderColor:"blue",pointRadius:0},
+                {data:pts,pointRadius:5,backgroundColor:"red"}
+            ]
+        },
+        options:{
+            plugins:{legend:{display:false}},
+            scales:{y:{ticks:{display:false}}}
+        },
+        plugins:[axesPlugin]
+    });
+}
+
+document.getElementById("typeFac").addEventListener("change", updateFacDisplay);
+
+newExercise();
+
+</script>
+
+</body>
+</html>
