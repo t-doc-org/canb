@@ -9,81 +9,69 @@ subject: "Mathématiques 2e année"
 
 ---
 
-## 1. Corrigé — Trajectoire d’une balle
+## Trajectoire d’une balle
 
 On résout :
 
-\[
-12t - 4.9t^2 > 5
-\]
+$12t - 4.9t^2 > 5$
 
-\[
--4.9t^2 + 12t - 5 > 0.
-\]
+$-4.9t^2 + 12t - 5 > 0$
 
-Discriminant : \(\Delta = 46\).  
+Discriminant : $\Delta = 46$.
+
 Racines :
 
-\[
-t_1 pprox 0.51,\qquad t_2 pprox 2.00.
-\]
+$t_1 \approx 0.51,\qquad t_2 \approx 2.00$
 
 ### Tableau de signes
 
 ```{flex-table}
 :class: function-table
-|$t$|{.l .w}$-\infty$|$t_1$|{.w}|$t_2$|{.r .w}$+\infty$
-|$t - t_1$|$-$|{.g}$0$|$+$||$+$
-|$t - t_2$|$-$||$-$|{.g}$0$|$+$
-|$-4.9$|$-$||$-$||$-$||$-$|
-|$\text{Produit}$|$-$|{.g}|$+$|{.g}|$-$
+|$t$|{.l .w}$-\infty$|$0.51$|{.w}|$2$|{.r .w}$+\infty$
+|$t - 0.51$|$-$|{.g}$0$|$+$||$+$
+|$t - 2$|$-$||$-$|{.g}$0$|$+$
+|$-4.9$|$-$||$-$||$-$
+|$\text{Produit}$|$-$|{.g}$0$|$+$|{.g}$0$|$-$
 ```
 
 #### **Conclusion**
 
-\[
-0.51 < t < 2.00
-\]
+$[0.51 < t < 2.00]$
 
 ---
 
-## 2. Corrigé — Rentabilité d’un artisan
+## Rentabilité d’un artisan
 
 On résout :
 
-\[
-B(x)= -0.2x^2 + 14x - 100 > 0.
-\]
+$B(x)= -0.2x^2 + 14x - 100 > 0$
 
-Discriminant : \(\Delta = 2900\).  
+Discriminant : $\Delta = 2900$
+
 Racines :
 
-\[
-x_1 pprox 9.13,\qquad x_2 pprox 54.87.
-\]
+$x_1 \approx 9.13,\qquad x_2 \approx 54.87$
 
 ### Tableau de signes
 
 ```{flex-table}
 :class: function-table
-|$x$|{.l .w}$-\infty$|$x_1$|{.w}|$x_2$|{.r .w}$+\infty$
-|$x-x_1$|$-$|{.g}$0$|$+$||$+$
-|$x-x_2$|$-$||$-$|{.g}$0$|$+$
-|$-0.2$|$-$||$-$||$-$||$-$|
-|$\text{Produit}$|$-$|{.g}|$+$|{.g}|$-$
+|$x$|{.l .w}$-\infty$|$9.13$|{.w}|$54.87$|{.r .w}$+\infty$
+|$x-9.13$|$-$|{.g}$0$|$+$||$+$
+|$x-54.87$|$-$||$-$|{.g}$0$|$+$
+|$-0.2$|$-$||$-$||$-$
+|$\text{Produit}$|$-$|{.g}$0$|$+$|{.g}$0$|$-$
 ```
 
 #### **Conclusion**
 
-\[
-9 \le x \le 55
-\]
+$[9 \le x \le 55]$
 
 ---
 
-## 3. Corrigé — Débit d’un bassin pluvial
+## Débit d’un bassin pluvial
 
-Numérateur nul : \(h=20\).
+Numérateur nul : $h=20$
 
 ### Tableau de signes
 
@@ -91,12 +79,10 @@ Numérateur nul : \(h=20\).
 :class: function-table
 |$h$|{.l .w}$0$|$20$|{.r .w}$+\infty$
 |$h-20$|$-$|{.g}$0$|$+$
-|$h+5$|$+$||$+$|
-|$\text{Quotient}$|$-$|{.g}|$+$
+|$h+5$|$+$|{.g}|$+$
+|$\text{Quotient}$|$-$|{.g}$\texttt{X}$|$+$
 ```
 
 #### **Conclusion**
 
-\[
-0 \le h < 20
-\]
+$[0 \le h < 20]$
