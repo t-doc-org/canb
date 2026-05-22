@@ -16,12 +16,18 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 
 ### 1ère année
 
+#### Tableaux de signes
+
 ```{toctree}
 :maxdepth: 1
 tab_signes
 tab_signes_corrige
 ```
 
+#### Fonction quadratiques
+
 <a href="../_static/fonc_quad.html" target="_blank">Fonctions quadratiques - illustration</a>
 
 <a href="../_static/fonc_quad_exos.html" target="_blank">Fonctions quadratiques - exercices</a>
+
+<a href="../_static/comp_carre_exos.html" target="_blank">Complétion du carré - exercices</a>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Complétion du carré</title>
+
+<style>
+body {
+    font-family: "Segoe UI";
+    background: #eef2f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.box {
+    background: #f4f7ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.formula {
+    text-align: center;
+    font-size: 20px;
+}
+
+input {
+    width: 60px;
+    text-align: center;
+}
+
+select {
+    margin: 0 5px;
+}
+
+input.good { border:2px solid green; background:#ecfff5;}
+input.bad { border:2px solid red; background:#fff0f0;}
+
+button {
+    padding: 8px 14px;
+    background: #3498db;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+#feedback {
+    text-align:center;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Complétion du carré</h2>
+
+<div class="box">
+<div class="formula" id="original"></div>
+</div>
+
+<!-- ETAPE 1 -->
+<div class="box">
+<p>Étape 1 : Compléter</p>
+
+<div class="formula">
+f(x) = x² 
+
+<select id="opB">
+<option value="+">+</option>
+<option value="-">−</option>
+</select>
+
+<span id="bTxt"></span>x 
+
++ <input id="addValue"> 
+− <input id="subValue">
+
+<span id="cTxt"></span>
+</div>
+
+<button onclick="checkStep1()">Valider</button>
+</div>
+
+<p id="feedback"></p>
+
+<!-- ETAPE 2 -->
+<div class="box" id="step2" style="display:none">
+<p>Étape 2 : Écrire le carré parfait</p>
+
+<div class="formula">
+x² 
+
+<select id="opB2"></select>
+
+<span id="bTxt2"></span>x + <span id="addTxt"></span> = 
+
+(x 
+
+<select id="opH">
+<option value="+">+</option>
+<option value="-">−</option>
+</select>
+
+<input id="h">)²
+</div>
+
+<button onclick="checkStep2()">Valider</button>
+</div>
+
+<!-- ETAPE 3 -->
+<div class="box" id="step3" style="display:none">
+<p>Étape 3 : Compléter la forme canonique</p>
+
+<div class="formula">
+f(x) = (x 
+
+<select id="opH2">
+<option value="+">+</option>
+<option value="-">−</option>
+</select>
+
+<span id="hTxt"></span>)² 
+
+<select id="opK">
+<option value="+">+</option>
+<option value="-">−</option>
+</select>
+
+<input id="k">
+</div>
+
+<button onclick="checkStep3()">Valider</button>
+</div>
+
+<button onclick="newExercise()">Nouvel exercice</button>
+
+</div>
+
+<script>
+
+let b,c,correctAdd,hValue,kValue;
+
+/* ===== EXERCICE ===== */
+function newExercise(){
+
+    // ✅ b multiple de 2
+    b = (Math.floor(Math.random()*5 + 1)) * 2;
+    if(Math.random() < 0.5) b = -b;
+
+    c = Math.floor(Math.random()*10 - 5);
+
+    // affichage texte
+    document.getElementById("original").innerHTML =
+    `f(x) = x² ${b>=0?"+":"-"} ${Math.abs(b)}x ${c>=0?"+":"-"} ${Math.abs(c)}`;
+
+    document.getElementById("bTxt").innerText = Math.abs(b);
+    document.getElementById("bTxt2").innerText = Math.abs(b);
+
+    document.getElementById("cTxt").innerText =
+        c>=0 ? "+ "+c : "- "+Math.abs(c);
+
+    correctAdd = (b/2)*(b/2);
+    hValue = b/2;
+    kValue = c - correctAdd;
+
+    document.getElementById("addTxt").innerText = correctAdd;
+    document.getElementById("hTxt").innerText = Math.abs(hValue);
+
+    // signe fixe pour étape 2
+    document.getElementById("opB2").innerHTML =
+    `<option>${b>=0?"+":"−"}</option>`;
+
+    // reset
+    document.getElementById("step2").style.display="none";
+    document.getElementById("step3").style.display="none";
+    document.getElementById("feedback").innerHTML="";
+
+    document.querySelectorAll("input").forEach(i=>{
+        i.value="";
+        i.className="";
+    });
+}
+
+/* ===== ETAPE 1 ===== */
+function checkStep1(){
+
+    let op = document.getElementById("opB").value;
+    let add = parseFloat(addValue.value);
+    let sub = parseFloat(subValue.value);
+
+    let ok=true;
+
+    if((b>0 && op!=="+") || (b<0 && op!=="-")) ok=false;
+
+    if(isNaN(add) || Math.abs(add - correctAdd)>0.01) ok=false;
+    if(isNaN(sub) || Math.abs(sub - correctAdd)>0.01) ok=false;
+
+    if(ok){
+        feedback.innerHTML="✅ Très bien !";
+        step2.style.display="block";
+    } else {
+        feedback.innerHTML="❌ Corrige";
+    }
+}
+
+/* ===== ETAPE 2 ===== */
+function checkStep2(){
+
+    let h = parseFloat(document.getElementById("h").value);
+    let op = document.getElementById("opH").value;
+
+    let ok=true;
+
+    if(Math.abs(h - Math.abs(hValue))>0.01) ok=false;
+
+    if((hValue>0 && op!=="+") || (hValue<0 && op!=="-")) ok=false;
+
+    if(ok){
+        feedback.innerHTML="✅ Parfait ! Tu as trouvé le carré 👍";
+        step3.style.display="block";
+    } else {
+        feedback.innerHTML="❌ Corrige";
+    }
+}
+
+/* ===== ETAPE 3 ===== */
+function checkStep3(){
+
+    let k = parseFloat(document.getElementById("k").value);
+    let op = document.getElementById("opK").value;
+
+    let ok = true;
+
+    // ✅ cas spécial k = 0
+    if(Math.abs(kValue) < 0.01){
+
+        if(Math.abs(k) < 0.01){
+            document.getElementById("k").className = "good";
+        } else {
+            document.getElementById("k").className = "bad";
+            ok = false;
+        }
+
+    } else {
+
+        // cas normal
+        if(Math.abs(k - Math.abs(kValue)) < 0.01){
+            document.getElementById("k").className = "good";
+
+            if((kValue > 0 && op !== "+") || (kValue < 0 && op !== "-")){
+                ok = false;
+                document.getElementById("k").className = "bad";
+            }
+
+        } else {
+            ok = false;
+            document.getElementById("k").className = "bad";
+        }
+
+    }
+
+    if(ok){
+        feedback.innerHTML =
+        "🎉 Bravo ! Tu maîtrises la complétion du carré !";
+    } else {
+        feedback.innerHTML = "❌ Encore un effort 💪";
+    }
+}
+/* init */
+newExercise();
+
+</script>
+
+</body>
+</html>
+``
