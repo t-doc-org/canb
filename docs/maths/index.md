@@ -22,6 +22,10 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 :maxdepth: 1
 tab_signes
 tab_signes_corrige
+func_quad
+func_quad_exos
+comp_carre
+comp_carre_exos
 ```
 
 #### Fonction quadratiques

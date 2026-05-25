@@ -1,0 +1,96 @@
+/* fonc_quad.css — styles for the quadratic function widget
+ * All rules are scoped to .fonc_quad to avoid collisions with the host site.
+ */
+
+.fonc_quad {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    padding: 20px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    max-width: 860px;
+    margin: 24px auto;
+    line-height: 1.5;
+}
+
+/* ── headings ────────────────────────────────────────────────── */
+
+.fonc_quad h2 {
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+}
+
+.fonc_quad h3 {
+    margin: 18px 0 8px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* ── coefficient inputs ──────────────────────────────────────── */
+
+.fonc_quad .fq-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.fonc_quad .fq-controls label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+}
+
+.fonc_quad .fq-controls input {
+    width: 68px;
+    padding: 5px 8px;
+    text-align: center;
+    border: 1px solid #bbc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    background: #f8f9fc;
+    transition: border-color 0.15s;
+}
+
+.fonc_quad .fq-controls input:focus {
+    outline: none;
+    border-color: #3498db;
+    background: #fff;
+}
+
+/* ── info boxes ──────────────────────────────────────────────── */
+
+.fonc_quad .fq-form-box {
+    background: #f0f3fa;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+.fonc_quad .fq-form-box:empty {
+    display: none;
+}
+
+/* ── chart ───────────────────────────────────────────────────── */
+
+.fonc_quad .fq-chart-wrapper {
+    max-width: 700px;
+    margin: 18px auto 4px;
+}
+
+/* ── colour helpers ──────────────────────────────────────────── */
+
+.fonc_quad .fq-orange { color: #e67e22; font-weight: 700; }
+.fonc_quad .fq-green  { color: #27ae60; font-weight: 700; }
+.fonc_quad .fq-red    { color: #e74c3c; font-weight: 700; }
+.fonc_quad .fq-muted  { opacity: 0.65; }
+
+/* ── characteristic-points paragraph ────────────────────────── */
+
+.fonc_quad #fq-points {
+    margin: 4px 0 0;
+    line-height: 2;
+}

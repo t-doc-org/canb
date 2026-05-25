@@ -1,0 +1,87 @@
+/* comp_carre.css — styles for the completing-the-square widget
+ * All rules are scoped to .comp_carre to avoid collisions with the host site.
+ */
+
+.comp_carre {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    max-width: 850px;
+    margin: 30px auto;
+    line-height: 1.5;
+}
+
+/* ── headings ────────────────────────────────────────────────── */
+
+.comp_carre h2 {
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+}
+
+/* ── info boxes ──────────────────────────────────────────────── */
+
+.comp_carre .cc-box {
+    background: #f4f7ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* ── formula display ─────────────────────────────────────────── */
+
+.comp_carre .cc-formula {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* ── inputs ──────────────────────────────────────────────────── */
+
+.comp_carre input {
+    width: 60px;
+    text-align: center;
+    margin: 0 5px;
+    padding: 4px;
+    border: 1px solid #bbc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    background: #f8f9fc;
+    transition: border-color 0.15s;
+}
+
+.comp_carre input:focus {
+    outline: none;
+    border-color: #3498db;
+    background: #fff;
+}
+
+/* ── select ──────────────────────────────────────────────────── */
+
+.comp_carre select {
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #bbc;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* ── buttons ─────────────────────────────────────────────────── */
+
+.comp_carre button {
+    padding: 10px 16px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.comp_carre button:hover {
+    background: #2980b9;
+}

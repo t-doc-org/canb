@@ -1,0 +1,116 @@
+/* comp_carre_exos.css — styles for the completing-the-square exercise widget
+ * All rules are scoped to .comp_carre_exos to avoid collisions with the host site.
+ */
+
+.comp_carre_exos {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    max-width: 800px;
+    margin: 30px auto;
+    line-height: 1.5;
+}
+
+/* ── headings ────────────────────────────────────────────────── */
+
+.comp_carre_exos h2 {
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+}
+
+.comp_carre_exos p {
+    margin: 0 0 8px;
+}
+
+/* ── boxes ───────────────────────────────────────────────────── */
+
+.comp_carre_exos .cce-box {
+    background: #f4f7ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* ── formula display ─────────────────────────────────────────── */
+
+.comp_carre_exos .cce-formula {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 8px;
+    line-height: 2.8;
+}
+
+/* ── inputs ──────────────────────────────────────────────────── */
+
+.comp_carre_exos input {
+    width: 60px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #bbc;
+    border-radius: 5px;
+    font-size: inherit;
+    font-family: inherit;
+    background: #f8f9fc;
+    margin: 0 4px;
+    vertical-align: middle;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.comp_carre_exos input:focus {
+    outline: none;
+    border-color: #3498db;
+    background: #fff;
+}
+
+.comp_carre_exos input.cce-good {
+    border: 2px solid green;
+    background: #ecfff5;
+}
+
+.comp_carre_exos input.cce-bad {
+    border: 2px solid red;
+    background: #fff0f0;
+}
+
+/* ── selects ─────────────────────────────────────────────────── */
+
+.comp_carre_exos select {
+    margin: 0 5px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #bbc;
+    background: #fff;
+    font-size: inherit;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* ── buttons ─────────────────────────────────────────────────── */
+
+.comp_carre_exos button {
+    padding: 8px 14px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.comp_carre_exos button:hover {
+    background: #2980b9;
+}
+
+/* ── feedback ────────────────────────────────────────────────── */
+
+.comp_carre_exos .cce-feedback {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-height: 1.6em;
+    margin: 4px 0;
+}

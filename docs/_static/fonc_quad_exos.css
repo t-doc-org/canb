@@ -1,0 +1,209 @@
+/* fonc_quad_exos.css — styles for the quadratic exercise widget
+ * All rules are scoped to .fonc_quad_exos to avoid collisions with the host site.
+ */
+
+.fonc_quad_exos {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 950px;
+    margin: 24px auto;
+}
+
+/* ── headings ────────────────────────────────────────────────── */
+
+.fonc_quad_exos h2 {
+    text-align: center;
+    margin: 0 0 14px;
+    font-size: 1.2rem;
+}
+
+.fonc_quad_exos h4 {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* ── given-form label ────────────────────────────────────────── */
+
+.fonc_quad_exos #fqe-given {
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* ── boxes ───────────────────────────────────────────────────── */
+
+.fonc_quad_exos .fqe-box {
+    background: #f4f7ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    transition: background 0.2s;
+}
+
+.fonc_quad_exos .fqe-box:hover {
+    background: #eaf0ff;
+}
+
+/* ── formula display area ────────────────────────────────────── */
+
+.fonc_quad_exos .fqe-formula {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 3.2;
+    word-spacing: 0.1em;
+}
+
+.fonc_quad_exos .fqe-no-fac {
+    color: #777;
+}
+
+/* ── number inputs ───────────────────────────────────────────── */
+
+.fonc_quad_exos input {
+    width: 46px;
+    padding: 3px 4px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #bbc;
+    font-size: inherit;      /* match surrounding formula text */
+    font-family: inherit;
+    background: #fff;
+    vertical-align: middle;
+    margin: 0 6px;           /* breathing room around each field */
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.fonc_quad_exos input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.fonc_quad_exos input.fqe-good {
+    border: 2px solid #2ecc71;
+    background: #ecfff5;
+}
+
+.fonc_quad_exos input.fqe-bad {
+    border: 2px solid #e74c3c;
+    background: #fff0f0;
+}
+
+.fonc_quad_exos input:disabled {
+    background: #e8eaf0;
+    color: #444;
+    border-color: #ccc;
+    cursor: default;
+}
+
+/* ── operator toggle buttons ─────────────────────────────────── */
+
+.fonc_quad_exos .fqe-op {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6em;            /* scales with formula font size */
+    height: 1.6em;
+    padding: 0;
+    border-radius: 6px;
+    border: 1px solid #99aacc;
+    background: #dce4f5;
+    color: #223;
+    font-size: inherit;      /* match surrounding formula text */
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1;
+    vertical-align: middle;
+    margin: 0 4px;           /* space on each side of the operator */
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.fonc_quad_exos .fqe-op:hover:not(:disabled) {
+    background: #c4d0ee;
+}
+
+.fonc_quad_exos .fqe-op:disabled {
+    background: #e8eaf0;
+    border-color: #ccc;
+    color: #666;
+    cursor: default;
+}
+
+/* ── select ──────────────────────────────────────────────────── */
+
+.fonc_quad_exos select {
+    display: block;
+    margin: 0 auto 6px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #bbc;
+    font-size: 0.95rem;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* ── action buttons (Valider / Nouvel exercice) ──────────────── */
+
+.fonc_quad_exos .fqe-btn-row {
+    text-align: center;
+    margin: 6px 0;
+}
+
+.fonc_quad_exos .fqe-btn-row button {
+    padding: 10px 20px;
+    margin: 6px 6px;
+    border-radius: 8px;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.fonc_quad_exos .fqe-btn-row button:hover {
+    background: #2980b9;
+}
+
+/* ── feedback ────────────────────────────────────────────────── */
+
+.fonc_quad_exos #fqe-feedback {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 4px 0;
+    min-height: 1.6em;
+}
+
+/* ── chart ───────────────────────────────────────────────────── */
+
+.fonc_quad_exos .fqe-chart-wrapper {
+    max-width: 700px;
+    margin: 16px auto 0;
+}
+
+/* ── two-column layout on wider screens ──────────────────────── */
+
+@media (min-width: 700px) {
+    .fonc_quad_exos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        align-items: start;
+    }
+
+    .fonc_quad_exos h2,
+    .fonc_quad_exos #fqe-given,
+    .fonc_quad_exos .fqe-box,
+    .fonc_quad_exos .fqe-btn-row,
+    .fonc_quad_exos #fqe-feedback,
+    .fonc_quad_exos .fqe-chart-wrapper {
+        grid-column: span 2;
+    }
+}
