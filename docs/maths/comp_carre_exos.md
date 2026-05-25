@@ -1,4 +1,4 @@
-# Complétion du carré - illustration
+# Complétion du carré - exercices
 
 <link rel="stylesheet" href="../../_static/comp_carre_exos.css">
 <script src="../../_static/comp_carre_exos.js"></script>
