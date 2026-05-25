@@ -5,18 +5,19 @@
 .fonc_quad {
     font-family: "Segoe UI", Arial, sans-serif;
     background: #ffffff;
-    padding: 20px 24px;
-    border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
     max-width: 860px;
-    margin: 24px auto;
+    margin: 28px auto;
     line-height: 1.5;
 }
 
 /* ── headings ────────────────────────────────────────────────── */
 
 .fonc_quad h2 {
-    margin: 0 0 16px;
+    text-align: center;
+    margin: 0 0 18px;
     font-size: 1.25rem;
 }
 
@@ -63,11 +64,16 @@
 /* ── info boxes ──────────────────────────────────────────────── */
 
 .fonc_quad .fq-form-box {
-    background: #f0f3fa;
-    padding: 10px 14px;
-    border-radius: 6px;
-    margin-bottom: 8px;
+    background: #f4f7ff;
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-bottom: 14px;
     line-height: 1.7;
+    transition: background 0.2s;
+}
+
+.fonc_quad .fq-form-box:hover {
+    background: #eaf0ff;
 }
 
 .fonc_quad .fq-form-box:empty {
@@ -78,7 +84,7 @@
 
 .fonc_quad .fq-chart-wrapper {
     max-width: 700px;
-    margin: 18px auto 4px;
+    margin: 16px auto 0;
 }
 
 /* ── colour helpers ──────────────────────────────────────────── */
