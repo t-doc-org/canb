@@ -31,9 +31,9 @@ Voici une représentation graphique de la fonction :
 ```
 
 <script type="module">
-const [{initBoard}] = await tdoc.imports('tdoc/jsxgraph.js');
+const {initBoard} = await tdoc.import('tdoc/jsxgraph.js');
 initBoard('ex1', {
-    boundingBox: [-2, 10, 4, -2], keepAspectRatio: false,
+    boundingBox: [-1, 10, 4, -2], keepAspectRatio: false,
     axis: true, grid: true,
 }, board => {
     board.create('functiongraph', [x => 12*x-4.9*x**2]);
@@ -59,9 +59,9 @@ Voici une représentation graphique de la fonction :
 ```
 
 <script type="module">
-const [{initBoard}] = await tdoc.imports('tdoc/jsxgraph.js');
+const {initBoard} = await tdoc.import('tdoc/jsxgraph.js');
 initBoard('ex2', {
-    boundingBox: [-2, 200, 80, -50], keepAspectRatio: false,
+    boundingBox: [-6, 200, 80, -50], keepAspectRatio: false,
     axis: true, grid: true,
 }, board => {
     board.create('functiongraph', [x => -0.2*x**2+14*x-100]);
@@ -89,9 +89,9 @@ Voici une représentation graphique de la fonction :
 ```
 
 <script type="module">
-const [{initBoard}] = await tdoc.imports('tdoc/jsxgraph.js');
+const {initBoard} = await tdoc.import('tdoc/jsxgraph.js');
 initBoard('ex3', {
-    boundingBox: [-2, 5, 60, -5], keepAspectRatio: false,
+    boundingBox: [-4, 5, 60, -5], keepAspectRatio: false,
     axis: true, grid: true,
 }, board => {
     board.create('functiongraph', [x => (x-20)/(x+5)]);
