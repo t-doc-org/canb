@@ -17,7 +17,6 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 ### 1ère année
 
 ```{toctree}
-:maxdepth: 1
 tab_signes_main
 func_quad_main
 script_david/index

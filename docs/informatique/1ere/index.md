@@ -9,7 +9,6 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 ## Programmation Python
 
 ```{toctree}
-:maxdepth: 1
 python_intro_print_var_input
 if
 ```
@@ -17,7 +16,6 @@ if
 ## Divers
 
 ```{toctree}
-:maxdepth: 1
 twine
 twine_projet
 ```
