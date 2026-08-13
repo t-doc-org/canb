@@ -296,7 +296,8 @@ else:
 Indiquez l'ordre d'exécution et ce que vont afficher les programmes suivants?
 
 1.  ```{exec} python
-    :when: never
+    :name: couleurs
+    :when:
     :linenos:
     a = 2
     if a != 2:
@@ -311,19 +312,15 @@ Indiquez l'ordre d'exécution et ce que vont afficher les programmes suivants?
     1 - 2 - 4 - 6 - 7
 
     ```{exec} python
-    :linenos:
-    a = 2
-    if a != 2:
-      print("Rouge")
-    elif a < 2:
-      print("Bleu")
-    else:
-      print("Jaune")
+    :after: couleurs
+    :when: load
+    :class: hidden
     ```
     ````
 
 2.  ```{exec} python
-    :when: never
+    :name: calculs
+    :when:
     :linenos:
     y = 2
     if y <= -1:
@@ -339,21 +336,15 @@ Indiquez l'ordre d'exécution et ce que vont afficher les programmes suivants?
     1 - 2 - 4 - 5 - 8
 
     ```{exec} python
-    :linenos:
-    y = 2
-    if y <= -1:
-      y = 3 * y + 5
-    elif y <= 3:
-      y += 4
-    else:
-      y = y * y - 1
-    print(y)
+    :after: calculs
+    :when: load
+    :class: hidden
     ```
     ````
 
 ### Exercice {num2}`exercice`
 
-Le programme suivant est censé affiché le tarif appliqué en fonction de l'âge de
+Le programme suivant est censé afficher le tarif appliqué en fonction de l'âge de
 l'utilisateur. Mais il contient une erreur par ligne, trouvez-les et corrigez-les.
 
 ```{exec} python
