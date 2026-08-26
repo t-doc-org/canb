@@ -16,11 +16,8 @@ if
 ## Divers
 
 ```{toctree}
-<<<<<<< working copy
 :maxdepth: 1
 checkin
-=======
->>>>>>> merge rev
 twine
 twine_projet
 ```
