@@ -18,6 +18,7 @@ if
 
 ```{toctree}
 :maxdepth: 1
+checkin
 twine
 twine_projet
 ```
