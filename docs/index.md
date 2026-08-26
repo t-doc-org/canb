@@ -11,7 +11,6 @@ Le site est en cours de développement.
 ## Cours
 
 ```{toctree}
-:maxdepth: 1
 maths/index
 informatique/index
 bureautique/index
