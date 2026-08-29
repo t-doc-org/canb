@@ -8,7 +8,9 @@ author = "Brice Canvel"
 license = 'CC-BY-NC-SA-4.0'
 language = 'fr'
 
+exclude_patterns = ['_include/**']
 myst_links_external_new_tab = True
+myst_footnote_transition = False
 
 html_theme_options = {
     'repository_url': 'https://github.com/t-doc-org/canb',
@@ -18,4 +20,16 @@ html_theme_options = {
 
 metadata = {
     'solutions': 'dynamic',
+}
+
+metadata = {
+    'points': {
+        'text': [" ({0} pt)", " ({0} pts)"],
+    },
+    'exec': {'pnm': {}},
+    'chartjs': {
+        'plugins': {
+            'deferred': False,  # Interferes with printing
+        },
+    },
 }
