@@ -1,5 +1,7 @@
+*.autosave.xopp
 *.local.*
 *.orig
+*.swp
 __pycache__
 
 /_*/
