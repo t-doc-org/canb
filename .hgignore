@@ -1,6 +1,8 @@
 syntax: glob
+*.autosave.xopp
 *.local.*
 *.orig
+*.swp
 __pycache__
 
 syntax: regexp
