@@ -50,10 +50,7 @@ asymétrique.
 Vous allez l'utiliser pour vous créer des clés et chiffrer/signer des messages
 que vous vous enverrez par email.
 
-Rendez-vous sur le site suivant :
-
-- <https://pgptool.org/> (dead)
-- <https://pgp.najm.uk/>
+% <https://pgp.najm.uk/>
 
 ### Génération d'un couple de clés
 
@@ -61,7 +58,7 @@ Rendez-vous sur le site suivant :
 :style: height: 1400px;
 ```
 
-Remplissez les champs situés à gauche (mettez VOTRE nom et VOTRE adresse email) --
+Remplissez les champs (mettez VOTRE nom et VOTRE adresse email, le reste comme indiqué sur la copie d'écran) --
 la « Passphrase » est un mot de passe utilisé pour protéger votre clé privée --
 ne l'oubliez pas :
 
