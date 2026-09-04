@@ -3,10 +3,6 @@
 
 # Reeborg - partie 1
 
-```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
-:style: height : 1100px; width : 800px;
-```
-
 ## Introduction
 
 Reeborg est un robot qui doit accomplir des missions.
@@ -121,10 +117,7 @@ cette nouvelle instruction.
 ## Exécuter un programme
 
 Tu vas pouvoir maintenant voir le robot se déplacer pendant l'exécution d'un
-programme en te rendant à l'adresse
-[suivante](https://oci.e-apprendre.ch/reeborg-prog/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json).
-
-Tu devrais arriver sur cette page :
+programme :
 
 ```{image} images/reeborg_interface-site-reeborg.png
 :alt: Page du site de programmation Reeborg
@@ -149,6 +142,10 @@ de cette manière.
 2.  Copie et colle le programme de l'exercice 1 que tu as réécrit dans
     l'exercice 2 (version qui utilise `for _ in range(...)`). Tu devrais voir
     Reeborg dessiner la même chose.
+    
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```
 
 ## Exercice 4
 
@@ -161,6 +158,10 @@ de cette manière.
 ```
 
 **Colle ton code dans le devoir sur Teams**
+
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```
 
 ## Exercice 5
 
@@ -197,9 +198,13 @@ commandes que l'on définit.
 - Définis une nouvelle commande `tourne_a_droite()`.
 
 - Utilise cette commande ainsi qu'une commande `avance_4_fois()` que tu devras
-définir pour réécrire le programme que tu as fait à l'exercice 4 :
+définir pour réécrire le programme que tu as fait à l'exercice 4.
 
 **Colle ton code dans le devoir sur Teams**
+
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```
 
 ## Exercice 6
 
@@ -227,5 +232,6 @@ avance_4_fois
 
 **Colle dans le devoir sur Teams ton programme corrigé** 
 
-(tu peux tester sur le site de
-[Reeborg](https://oci.e-apprendre.ch/reeborg-prog/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json))
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```

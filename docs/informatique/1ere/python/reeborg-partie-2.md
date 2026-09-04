@@ -3,7 +3,7 @@
 
 # Reeborg - partie 2
 
-## Exercice 1
+## Exercice 7
 
 Le programme que tu trouveras à l'adresse <https://www.codepuzzle.io/PWJQGR>
 est dans le désordre. Remets-le dans l'ordre pour que Reeborg fasse le parcours
@@ -34,7 +34,7 @@ Pour copier :
 :align: center
 ```
 
-## Exercice 2
+## Exercice 8
 
 Reeborg doit faire le tour du monde :
 
@@ -93,10 +93,11 @@ Propose une solution plus « élégante » en définissant au moins une nouvelle
 commande et en faisant usage de l'instruction `for` pour répéter des
 instructions.
 
-Va sur le site de programmation
-[Reeborg](https://oci.e-apprendre.ch/reeborg-prog/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json).
-
 Sélectionne le monde **Autour 1**.
+
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```
 
 **Colle ta solution dans le devoir sur Teams**
 
@@ -122,10 +123,11 @@ prend()
 depose()
 ```
 
-## Exercice 3
+## Exercice 9
 
-Va sur le site de programmation
-[Reeborg](https://oci.e-apprendre.ch/reeborg-prog/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json).
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```
 
 Sélectionne le monde **Jetons 1**.
 
@@ -139,7 +141,7 @@ couleur : ceci indique que Reeborg doit déposer un seul jeton à cet endroit.
 Finalement, le carré suivant en vert pâle indique l'endroit où Reeborg doit
 terminer son programme.
 
-Écris un programme pour accomplir cette tâche et **colle ta solution dans le devoir sur Teams**
+Écris un programme pour accomplir cette tâche et **colle ta solution dans le devoir sur Teams**.
 
 
 Est-ce que ton programme peut également, sans aucun changement, accomplir la
@@ -148,7 +150,7 @@ tâche du monde **Jetons 2** ?
 La réponse devrait être non... mais, plus tard, tu apprendras à écrire un seul
 programme pouvant accomplir ces deux tâches.
 
-## Exercice 4
+## Exercice 10
 
 **Dans cet exercice, tu dois lire et comprendre le programme donné et le
 compléter !**
@@ -175,10 +177,11 @@ et doit la déposer en haut à droite :
 :align: center
 ```
 
-Va sur le site de programmation
-[Reeborg](https://oci.e-apprendre.ch/reeborg-prog/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json).
-
 Choisis le monde **Journal 0** et aide Reeborg à livrer le journal.
+
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```
 
 Tu dois pour cela tout d'abord comprendre puis adapter le programme suivant en
 utilisant les deux instructions `prend()` et `depose()` :
@@ -274,19 +277,20 @@ if objet_ici():
     prend()
 ```
 
-## Exercice 5a
+## Exercice 11a
 
-**Dans cet exercice, tu dois lire et comprendre le programme donné et le
-compléter !**
+**Dans cet exercice, tu dois lire et comprendre le programme donné et le compléter !**
 
-Va sur le site de programmation
-[Reeborg](https://oci.e-apprendre.ch/reeborg-prog/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json)
-et ouvre le monde **Récolte 1** :
+Ouvre le monde **Récolte 1** :
 
 ```{image} images/reeborg_monde-recolte-1.png
 :alt: Monde Récolte 1
 :width: 40%
 :align: center
+```
+
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
 ```
 
 Le programme ci-dessous permet à Reeborg de parcourir tout le champ de carottes.
@@ -334,7 +338,7 @@ for _ in range(3):
 
 **Colle ta solution dans le devoir sur Teams**
 
-## Exercice 5b
+## Exercice 11b
 
 Dans le monde **Autour 1 - carottes**, des carottes sont placées aléatoirement
 (à chaque exécution du programme, elles se trouvent à un endroit différent).
@@ -346,9 +350,6 @@ Dans le monde **Autour 1 - carottes**, des carottes sont placées aléatoirement
 ```
 
 Voici ci-dessous un programme pour ce monde.
-
-Va sur le site de programmation
-[Reeborg](https://oci.e-apprendre.ch/reeborg-prog/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json).
 
 Réécris le programme pour qu'il soit plus court et plus facile à lire :
 
@@ -467,9 +468,13 @@ avance()
 tourne_a_gauche()
 ```
 
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```
+
 **Colle ta solution dans le devoir sur Teams**
 
-## Exercice 6
+## Exercice 12
 
 Tu vas écrire un programme qui permet à Reeborg de réaliser ses tâches dans les
 mondes **Jetons 1**, **2** et **3**.
@@ -501,14 +506,15 @@ for _ in range(42):
 À toi de compléter le programme et de le tester dans les mondes **Jetons 1**,
 **2** et **3**.
 
-Va sur le site de programmation
-[Reeborg](https://oci.e-apprendre.ch/reeborg-prog/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json).
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```
 
 **Colle ta solution dans le devoir sur Teams**
 
-## Exercice 7
+## Exercice 13
 
-Reprends le programme de l'exercice 5a.
+Reprends le programme de l'exercice 11a.
 
 Va dans le monde **Récolte 2**.
 
@@ -522,7 +528,11 @@ maximum 3 carottes.
 :align: center
 ```
 
-Réfléchis comment modifier le programme de l'exercice 5a pour qu'il fonctionne
+Réfléchis comment modifier le programme de l'exercice 11a pour qu'il fonctionne
 dans ce nouveau monde.
 
 Fonctionne-t-il aussi dans le monde Récolte 1 ?
+
+```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
+:style: height : 1100px; width : 800px;
+```
