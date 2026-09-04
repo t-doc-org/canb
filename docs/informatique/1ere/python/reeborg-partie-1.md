@@ -86,14 +86,8 @@ d'instructions plusieurs fois.
 
 Voici un exemple de cette instruction pour que Reeborg avance 3 fois :
 
-```{image} images/reeborg_boucle-for-avance-3-fois.png
-:alt: Boucle for pour avancer 3 fois
-:width: 25%
-:align: center
-```
-
 ```{code-block} python
-for _ in range(3):
+for i in range(3):
     avance()
 ```
 
@@ -140,7 +134,7 @@ de cette manière.
     dessiner un carré.
 
 2.  Copie et colle le programme de l'exercice 1 que tu as réécrit dans
-    l'exercice 2 (version qui utilise `for _ in range(...)`). Tu devrais voir
+    l'exercice 2 (version qui utilise `for i in range(...)`). Tu devrais voir
     Reeborg dessiner la même chose.
     
 ```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
@@ -173,7 +167,7 @@ du programme*) pour avancer 5 fois (comme c'était le cas dans l'exercice 1) :
 
 ```{code-block} python
 def avance_5_fois():
-    for _ in range(5):
+    for i in range(5):
         avance()
 ```
 
@@ -212,15 +206,15 @@ Voici un programme qui contient des erreurs. À toi de les corriger :
 
 ```{code-block} python
 def avance_3_fois():
-    for _ in range(5)
+    for i in range(5)
         avance()
 
 def avance_4_fois
-    for _ in range(4):
+    for i in range(4):
         avance()
 
 def tourne_a_droite():
-    for _ in range(3):
+    for i in range(3):
         tourne_a_gauche()
 
 avance_3_fois

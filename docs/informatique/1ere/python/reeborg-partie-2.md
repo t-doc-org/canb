@@ -189,15 +189,15 @@ utilisant les deux instructions `prend()` et `depose()` :
 ```{code-block} python
 # Définitions de commandes
 def tourne_a_droite():
-    for _ in range(3):
+    for i in range(3):
         tourne_a_gauche()
 
 def avance_2_fois():
-    for _ in range(2):
+    for i in range(2):
         avance()
 
 def demi_tour():
-    for _ in range(2):
+    for i in range(2):
         tourne_a_gauche()
 
 def monte():
@@ -213,12 +213,12 @@ def descend():
     tourne_a_droite()
 
 # Programme
-for _ in range(5):
+for i in range(5):
     monte()
 
 demi_tour()
 
-for _ in range(5):
+for i in range(5):
     descend()
 ```
 
@@ -304,15 +304,15 @@ endroits où il faut changer le programme).
 ```{code-block} python
 # Définition des commandes
 def tourne_a_droite():
-    for _ in range(3):
+    for i in range(3):
         tourne_a_gauche()
 
 def avance_2_fois():
-    for _ in range(2):
+    for i in range(2):
         avance()
 
 def avance_5_fois():
-    for _ in range(5):
+    for i in range(5):
         avance()
 
 def aller_au_depart():
@@ -332,7 +332,7 @@ def recolte_2_colonnes():
 
 # Programme
 aller_au_depart()
-for _ in range(3):
+for i in range(3):
     recolte_2_colonnes()
 ```
 
@@ -497,7 +497,7 @@ def avance_jusqua_tache_terminee():
     if objet_ici():
         # Ajouter 3 instructions
 
-for _ in range(42):
+for i in range(42):
     # La valeur 42 a été choisie pour être sûr d'arriver au bout.
     # Nous verrons plus tard comment mieux faire.
     avance_jusqua_tache_terminee()
