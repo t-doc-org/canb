@@ -18,6 +18,10 @@ table} (...)` suivi du nom de la table. Entre parenthèses, nous indiquons la
 liste des nom des colonnes, ainsi que leur [type](type-donnees.md).\
 Chaque instruction doit se terminer par un point-virgule.
 
+Attention : les noms des colonnes ne doivent pas contenir d'espaces 
+(par exemple ```prix unitaire``` n'est pas valide, utiliser plutôt ```prix_unitaire```). 
+Il est aussi préférable de ne pas utiliser d'accents pour un nom de colonne.
+
 ```{exec} sql
 :name: sql-stock
 :then: sql-stock-select
@@ -371,7 +375,7 @@ create table stock (
 Créez une table `eleve` qui contient les informations des élèves: nom, prénom,
 sexe, classe, date de naissance, email, adresse, code postal, ville, téléphone.\
 Quelles sont les colonnes obligatoires?\
-Écrivez la requête qui permet de créer cette table en choisissant le type
+Écrivez la requête qui permet de créer cette table en choisissant le [type](type-donnees.md)
 adapté pour chaque colonne.\
 Ajoutez une ligne avec vos propres informations sauf le numéro de téléphone.
 
