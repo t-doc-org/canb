@@ -486,13 +486,13 @@ create table boisson (
 
 insert into boisson values
   ('Espresso', 2.00),
-  ('Café', 2.00);
+  ('Café', 2.00),
+  ('Thé', 1.50);
 insert into boisson (nom) values
   ('Café au lait'),
   ('Cappuccino'),
   ('Latte Macchiato'),
   ('Chocolat chaud'),
   ('Chocolat froid');
-insert into boisson values ('Thé', 2.00);
 ```
 ````
