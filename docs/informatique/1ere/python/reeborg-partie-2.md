@@ -34,6 +34,22 @@ Pour copier :
 :align: center
 ```
 
+````{solution}
+```{exec} python
+:when:
+def tourne_a_droite():
+    for _ in range(3):
+        tourne_a_gauche()
+        
+for _ in range(9):
+    tourne_a_gauche()
+    avance()
+    tourne_a_droite()
+    avance()
+```
+````
+
+
 ## Exercice 8
 
 Reeborg doit faire le tour du monde :
@@ -101,6 +117,20 @@ Sélectionne le monde **Autour 1**.
 
 **Colle ta solution dans le devoir sur Teams**
 
+````{solution}
+```{exec} python
+:when:
+# Avance 9 fois
+def avance_9_fois():
+    for i in range(9):
+        avance()
+
+for i in range(4):
+    avance_9_fois()
+    tourne_a_gauche()
+```
+````
+
 ```{note}
 Dans tous les exercices à partir de maintenant, tu dois réfléchir comment
 définir des nouvelles commandes et utiliser les instructions de répétition pour
@@ -149,6 +179,17 @@ tâche du monde **Jetons 2** ?
 
 La réponse devrait être non... mais, plus tard, tu apprendras à écrire un seul
 programme pouvant accomplir ces deux tâches.
+
+````{solution}
+```{exec} python
+:when:
+avance()
+prend()
+avance()
+depose()
+avance()
+```
+````
 
 ## Exercice 10
 

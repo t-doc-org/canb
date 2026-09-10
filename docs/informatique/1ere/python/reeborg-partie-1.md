@@ -370,3 +370,10 @@ tourne_a_droite()
 avance_4_fois()
 ```
 ````
+
+## Synthèse
+
+```{iframe} https://fritube.ch/v/vo4fps
+:style: height : 400px; width : 700px;
+:allow: autoplay; fullscreen;
+```
