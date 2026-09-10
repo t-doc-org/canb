@@ -70,11 +70,30 @@ tourne_a_gauche()
 
 **Réponds aux questions ci-dessous dans le devoir sur Teams**
 
-- Quelle forme géométrique a-t-il dessiné (décris en termes exacts) ?
+1. Quelle forme géométrique a-t-il dessiné (décris en termes exacts) ?
 
-- Que faut-il changer dans le programme pour que la forme soit plus petite ? Plus grande ?
+2. Que faut-il changer dans le programme pour que la forme soit plus petite ? Plus grande ?
 
-- Il n'existe pas d'instruction `tourne_a_droite()`. Comment peut-on utiliser l'instruction `tourne_a_gauche()` pour que Reeborg tourne à droite ? Et pour qu'il fasse demi-tour ?
+3. Il n'existe pas d'instruction `tourne_a_droite()`. Comment peut-on utiliser l'instruction `tourne_a_gauche()` pour que Reeborg tourne à droite ? Et pour qu'il fasse demi-tour ?
+
+````{solution}
+1.  Le robot dessine un carré de longueur de côté 5.
+2.  Il faut ajouter ou enlever des instructions `avance()`.
+3.  Pour tourner à droite :
+    ```{exec} python
+    :when:
+    tourne_a_gauche()
+    tourne_a_gauche()
+    tourne_a_gauche()
+    ```
+    Pour faire demi-tour :
+    ```{exec} python
+    :when:
+    tourne_a_gauche()
+    tourne_a_gauche()
+    tourne_a_gauche()
+    ```
+````
 
 ## Exercice 2
 
@@ -100,13 +119,50 @@ fonctionnera pas.
 
 **Réponds aux questions ci-dessous dans le devoir sur Teams**
 
-- Comment changer l'exemple pour que Reeborg avance 5 fois ?
+1. Comment changer l'exemple pour que Reeborg avance 5 fois ?
 
-- Réécris le programme de l'exercice 1 afin qu'il soit plus court en utilisant
+2. Réécris le programme de l'exercice 1 afin qu'il soit plus court en utilisant
 cette nouvelle instruction.
 
-- Comment peux-tu améliorer `tourne_a_droite` pour éviter d'écrire
+3. Comment peux-tu améliorer `tourne_a_droite` pour éviter d'écrire
 `tourne_a_gauche()` 3 fois ?
+
+````{solution}
+1.  ```{exec} python
+    :when:
+    for i in range(5):
+        avance()
+    ```
+2.  ```{exec} python
+    :when:
+    for i in range(5):
+        avance()
+    tourne_a_gauche()
+    for i in range(5):
+        avance()
+    tourne_a_gauche()
+    for i in range(5):
+        avance()
+    tourne_a_gauche()
+    for i in range(5):
+        avance()
+    tourne_a_gauche()
+    ```
+    ou encore mieux :
+    ```{exec} python
+    :when:
+    for i in range(4):
+        for i in range(5):
+            avance()
+        tourne_a_gauche()
+    ```
+3.  Pour tourner à droite :
+    ```{exec} python
+    :when:
+    for i in range(3):
+      tourne_a_gauche()
+    ```
+````
 
 ## Exécuter un programme
 
@@ -157,6 +213,27 @@ de cette manière.
 :style: height : 1100px; width : 800px;
 ```
 
+
+````{solution}
+```{exec} python
+:when:
+# Avance 4 fois
+for i in range(4):
+    avance()
+# Tourne à gauche
+tourne_a_gauche()
+# Avance 4 fois
+for i in range(4):
+    avance()
+# Tourne à droite
+for i in range(3):
+  tourne_a_gauche()
+# Avance 4 fois
+for i in range(4):
+    avance()
+```
+````
+
 ## Exercice 5
 
 Pour réutiliser des éléments de programme, on peut définir de nouvelles
@@ -187,11 +264,11 @@ va faire avancer le robot 5 fois puis tourner à gauche.
 Attention, il ne faut pas mettre d'espaces vides dans les noms des nouvelles
 commandes que l'on définit.
 
-- Réécris le programme de l'exercice 1 en entier en utilisant la nouvelle commande `avance_5_fois()`.
+1. Réécris le programme de l'exercice 1 en entier en utilisant la nouvelle commande `avance_5_fois()`.
 
-- Définis une nouvelle commande `tourne_a_droite()`.
+2. Définis une nouvelle commande `tourne_a_droite()`.
 
-- Utilise cette commande ainsi qu'une commande `avance_4_fois()` que tu devras
+3. Utilise cette commande ainsi qu'une commande `avance_4_fois()` que tu devras
 définir pour réécrire le programme que tu as fait à l'exercice 4.
 
 **Colle ton code dans le devoir sur Teams**
@@ -199,6 +276,47 @@ définir pour réécrire le programme que tu as fait à l'exercice 4.
 ```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
 :style: height : 1100px; width : 800px;
 ```
+
+````{solution}
+1. ```{exec} python
+    :when:
+    # Avance 5 fois
+    def avance_5_fois():
+        for i in range(5):
+            avance()
+
+    for i in range(4):
+        avance_5_fois()
+        tourne_a_gauche()
+   ```
+
+2. ```{exec} python
+   :when:
+   # Tourne à droite
+   def tourne_a_droite():
+       for i in range(3):
+       tourne_a_gauche()
+   ```
+    
+3. ```{exec} python
+   :when:
+   # Avance 4 fois
+   def avance_4_fois():
+       for i in range(4):
+           avance()
+           
+   # Tourne à droite
+   def tourne_a_droite():
+       for i in range(3):
+       tourne_a_gauche()
+   ```
+   
+   avance_4_fois()
+   tourne_a_gauche()
+   avance_4_fois()
+   tourne_a_droite()
+   avance_4_fois()
+````
 
 ## Exercice 6
 
@@ -229,3 +347,26 @@ avance_4_fois
 ```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
 :style: height : 1100px; width : 800px;
 ```
+
+````{solution}
+```{exec} python
+:when:
+def avance_3_fois():
+    for i in range(3):
+        avance()
+
+def avance_4_fois():
+    for i in range(4):
+        avance()
+
+def tourne_a_droite():
+    for i in range(3):
+        tourne_a_gauche()
+
+avance_3_fois()
+tourne_a_gauche()
+avance_3_fois()
+tourne_a_droite()
+avance_4_fois()
+```
+````
