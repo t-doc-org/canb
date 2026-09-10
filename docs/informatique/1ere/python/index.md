@@ -11,6 +11,9 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 ```{toctree}
 reeborg-partie-1
 reeborg-partie-2
+reeborg-haies
+reeborg-escaliers
+reeborg-etoiles
 python_intro_print_var_input
 if
 ```
