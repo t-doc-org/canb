@@ -14,6 +14,8 @@ Votre programme doit éviter les répétitions en utilisant `for i in range()` e
 :style: height : 1100px; width : 800px;
 ```
 
+Choisir le monde `Haies 1`.
+
 ````{solution}
 ```{exec} python
 :when:
