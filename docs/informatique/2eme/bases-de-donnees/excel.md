@@ -8,14 +8,16 @@ informations sous forme de tableaux. Il est possible d'y faire des calculs
 automatiques, créer des graphiques, trier et filtrer des données ou encore
 analyser des résultats.
 
-## Exemple {nump}`exemple`
+## Exercice {nump}`exercice`
 
 Dans cet exemple, que nous allons résoudre étape par étape, nous travaillerons
 sur les notes des élèves.
 
-Téléchargez le document suivant: [Notes](notes.xlsx)
+Téléchargez le document Excel: [Notes](notes.xlsx)
 
-Réalisons les manipulations suivantes dans le document ci-dessus:
+Téléchargez la marche à suivre: [Marche à suivre](exercice_notes_marche_a_suivre.pdf)
+
+Réalisez les manipulations suivantes dans le document `notes.xlsx` avec Excel en vous aidant de la marche à suivre:
 
 1.  Ajoutez une colonne `id`.
 2.  Attribuez un identifiant unique à chaque élève.
