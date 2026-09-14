@@ -15,3 +15,52 @@ Pour trouver le monde, choisir *Autres mondes* puis *Tâches supplémentaires* p
 ```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
 :style: height : 1100px; width : 800px;
 ```
+
+````{solution}
+```{exec} python
+:when:
+# Définitions de commandes
+def avance_2_fois(): 
+    for _ in range(2): 
+        avance() 
+
+def avance_3_fois(): 
+    for _ in range(3): 
+        avance() 
+
+def avance_4_fois(): 
+    for _ in range(4): 
+        avance() 
+
+def monter(): 
+    for _ in range(9): 
+        avance() 
+
+def descendre(): 
+    for _ in range(9): 
+        avance() 
+
+def demi_tour(): 
+    for _ in range(2): 
+        tourne_a_gauche() 
+
+def monter_et_descendre(): 
+    tourne_a_gauche() 
+    monter() 
+    demi_tour() 
+    descendre() 
+    tourne_a_gauche() 
+    
+# Programme
+
+avance_3_fois() 
+
+for _ in range(6): 
+    monter_et_descendre() 
+    avance_4_fois() 
+
+monter_et_descendre() 
+
+avance_2_fois() 
+```
+````

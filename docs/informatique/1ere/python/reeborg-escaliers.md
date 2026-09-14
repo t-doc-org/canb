@@ -15,3 +15,43 @@ Pour charger le monde, ajouter `Monde("https://oci.e-apprendre.ch/reeborg-prog-l
 ```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
 :style: height : 1100px; width : 800px;
 ```
+
+````{solution}
+```{exec} python
+:when:
+# Définitions de commandes
+def tourne_a_droite(): 
+    for _ in range(3): 
+        tourne_a_gauche() 
+
+def avance_2_fois(): 
+    for _ in range(2): 
+        avance() 
+
+def demi_tour(): 
+    for _ in range(2): 
+        tourne_a_gauche()  
+
+def monte(): 
+    tourne_a_gauche() 
+    avance() 
+    tourne_a_droite() 
+    avance_2_fois() 
+
+def descend(): 
+    avance_2_fois() 
+    tourne_a_gauche() 
+    avance() 
+    tourne_a_droite() 
+     
+# Programme
+
+for _ in range(5): 
+    monte() 
+
+demi_tour() 
+
+for _ in range(5): 
+    descend() 
+    ```
+````
