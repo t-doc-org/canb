@@ -21,27 +21,27 @@ Pour trouver le monde, choisir *Tâches supplémentaires* dans le menu de gauche
 :when:
 # Définitions de commandes
 def avance_2_fois(): 
-    for _ in range(2): 
+    for i in range(2): 
         avance() 
 
 def avance_3_fois(): 
-    for _ in range(3): 
+    for i in range(3): 
         avance() 
 
 def avance_4_fois(): 
-    for _ in range(4): 
+    for i in range(4): 
         avance() 
 
 def monter(): 
-    for _ in range(9): 
+    for i in range(9): 
         avance() 
 
 def descendre(): 
-    for _ in range(9): 
+    for i in range(9): 
         avance() 
 
 def demi_tour(): 
-    for _ in range(2): 
+    for i in range(2): 
         tourne_a_gauche() 
 
 def monter_et_descendre(): 
@@ -55,7 +55,7 @@ def monter_et_descendre():
 
 avance_3_fois() 
 
-for _ in range(6): 
+for i in range(6): 
     monter_et_descendre() 
     avance_4_fois() 
 

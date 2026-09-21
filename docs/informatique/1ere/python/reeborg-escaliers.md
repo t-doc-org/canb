@@ -21,15 +21,15 @@ Pour charger le monde, ajouter `Monde("https://oci.e-apprendre.ch/reeborg-prog-l
 :when:
 # Définitions de commandes
 def tourne_a_droite(): 
-    for _ in range(3): 
+    for i in range(3): 
         tourne_a_gauche() 
 
 def avance_2_fois(): 
-    for _ in range(2): 
+    for i in range(2): 
         avance() 
 
 def demi_tour(): 
-    for _ in range(2): 
+    for i in range(2): 
         tourne_a_gauche()  
 
 def monte(): 
@@ -46,12 +46,12 @@ def descend():
      
 # Programme
 
-for _ in range(5): 
+for i in range(5): 
     monte() 
 
 demi_tour() 
 
-for _ in range(5): 
+for i in range(5): 
     descend() 
 ```
 ````

@@ -14,6 +14,8 @@ reeborg-partie-2
 reeborg-haies
 reeborg-escaliers
 reeborg-etoiles
+reeborg-resume
+reeborg-but4
 python_intro_print_var_input
 if
 ```
