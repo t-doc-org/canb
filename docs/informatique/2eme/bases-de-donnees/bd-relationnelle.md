@@ -311,16 +311,19 @@ Il faut maintenant déterminer la clé primaire de chacune de ces tables:
   donc un compteur `no_chanson`.
 - **ecoute**: la table contient deux clés étrangères, `# no_utilisateur` et
   `# no_chanson`, qui pointent vers les clés primaires des tables
-  `utilisateur` et `chanson`. Comme un même utilisateur peut écouter
-  plusieurs fois la même chanson (à des dates différentes), la combinaison de
-  ces deux clés étrangères ne suffit pas à identifier une écoute de manière
-  unique. Nous créons donc, ici aussi, un compteur `no_ecoute`.
+  `utilisateur` et `chanson`. Un même utilisateur peut certes écouter
+  plusieurs fois la même chanson, mais pas exactement à la même date et
+  heure: la combinaison `# no_utilisateur` + `# no_chanson` + `date_ecoute`
+  identifie donc déjà chaque écoute de manière unique. Contrairement aux
+  tables `utilisateur` et `chanson`, il n'est donc pas nécessaire de créer un
+  compteur `no_ecoute`: nous utilisons cette combinaison de trois colonnes
+  comme clé primaire (composée).
 
 Nous obtenons donc les trois tables suivantes:
 
 - `utilisateur`: no_utilisateur, nom, prenom
 - `chanson`: no_chanson, titre_chanson, artiste, album, genre
-- `ecoute`: no_ecoute, # no_utilisateur, # no_chanson, date_ecoute
+- `ecoute`: # no_utilisateur, # no_chanson, date_ecoute
 
 ```{graphviz}
 :align: center
@@ -380,16 +383,43 @@ digraph UML_Class_diagram {
       <tr> <td> <b>ecoute</b> </td> </tr>
       <tr> <td>
         <table border="0" cellborder="0" cellspacing="7" >
-          <tr> <td align="left" port="l0"><u>no_ecoute</u></td> </tr>
           <tr> <td align="left" port="e1"><u># no_utilisateur</u></td> </tr>
           <tr> <td port="e2" align="left" ><u># no_chanson</u></td> </tr>
-          <tr> <td port="e3" align="left" >date_ecoute</td> </tr>
+          <tr> <td port="e3" align="left" ><u>date_ecoute</u></td> </tr>
         </table>
       </td> </tr>
     </table>>
   ]
 }
 ```
+
+Voici à quoi ressemblent nos trois tables une fois remplies avec les données
+de l'exemple: chaque information n'apparaît plus qu'une seule fois.
+
+**Table `utilisateur`**
+
+| no_utilisateur | nom | prenom |
+| --------------: | :------- | :---- |
+| 1 | Fontaine | Léa |
+| 2 | Perret | Noah |
+
+**Table `chanson`**
+
+| no_chanson | titre_chanson | artiste | album | genre |
+| ----------: | :-------------- | :------- | :----------------- | :-------- |
+| 1 | Levitating | Dua Lipa | Future Nostalgia | Pop |
+| 2 | As It Was | Harry Styles | Harry's House | Pop |
+| 3 | Blinding Lights | The Weeknd | After Hours | Synth-pop |
+
+**Table `ecoute`**
+
+| # no_utilisateur | # no_chanson | date_ecoute |
+| -----------------: | ------------: | :--------------- |
+| 1 | 1 | 12.03.2024 08:15 |
+| 1 | 2 | 12.03.2024 08:19 |
+| 2 | 1 | 12.03.2024 09:02 |
+| 2 | 3 | 12.03.2024 09:05 |
+| 1 | 1 | 13.03.2024 07:40 |
 ````
 
 ### Exercice {num2}`exercice` — Football
@@ -434,16 +464,18 @@ Il faut maintenant déterminer la clé primaire de chacune de ces tables:
   compteur `no_match`.
 - **but**: la table contient deux clés étrangères, `# no_joueur` et
   `# no_match`, qui pointent vers les clés primaires des tables `joueur` et
-  `match`. Comme un même joueur peut marquer plusieurs buts lors du même
-  match (Kylian Moreau, lignes 1 et 2), la combinaison de ces deux clés
-  étrangères ne suffit pas à identifier un but de manière unique. Nous
-  créons donc, ici aussi, un compteur `no_but`.
+  `match`. Un même joueur peut certes marquer plusieurs buts lors du même
+  match (Kylian Moreau, lignes 1 et 2), mais pas à la même minute: la
+  combinaison `# no_joueur` + `# no_match` + `minute` identifie donc déjà
+  chaque but de manière unique. Comme pour la table `ecoute`, il n'est donc
+  pas nécessaire de créer un compteur `no_but`: nous utilisons cette
+  combinaison de trois colonnes comme clé primaire (composée).
 
 Nous obtenons donc les trois tables suivantes:
 
 - `joueur`: no_joueur, nom, prenom, equipe
 - `match`: no_match, adversaire, date_match, stade
-- `but`: no_but, # no_joueur, # no_match, minute
+- `but`: # no_joueur, # no_match, minute
 
 ```{graphviz}
 :align: center
@@ -503,16 +535,41 @@ digraph UML_Class_diagram {
       <tr> <td> <b>but</b> </td> </tr>
       <tr> <td>
         <table border="0" cellborder="0" cellspacing="7" >
-          <tr> <td align="left" port="l0"><u>no_but</u></td> </tr>
           <tr> <td align="left" port="b1"><u># no_joueur</u></td> </tr>
           <tr> <td port="b2" align="left" ><u># no_match</u></td> </tr>
-          <tr> <td port="b3" align="left" >minute</td> </tr>
+          <tr> <td port="b3" align="left" ><u>minute</u></td> </tr>
         </table>
       </td> </tr>
     </table>>
   ]
 }
 ```
+
+Voici à quoi ressemblent nos trois tables une fois remplies avec les données
+de l'exemple: chaque information n'apparaît plus qu'une seule fois.
+
+**Table `joueur`**
+
+| no_joueur | nom | prenom | equipe |
+| ---------: | :----- | :----- | :---------- |
+| 1 | Moreau | Kylian | FC Fribourg |
+| 2 | Berger | Sofia | FC Fribourg |
+
+**Table `match`**
+
+| no_match | adversaire | date_match | stade |
+| --------: | :----------- | :---------- | :----------------- |
+| 1 | AS Bulle | 05.04.2024 | Stade St-Léonard |
+| 2 | US Portalban | 12.04.2024 | Stade St-Léonard |
+
+**Table `but`**
+
+| # no_joueur | # no_match | minute |
+| ------------: | -----------: | -----: |
+| 1 | 1 | 23 |
+| 1 | 1 | 67 |
+| 2 | 1 | 41 |
+| 1 | 2 | 15 |
 ````
 
 ### Exercice {num2}`exercice` — Trottinettes
@@ -561,18 +618,19 @@ Il faut maintenant déterminer la clé primaire de chacune de ces tables:
   stable. C'est cette colonne, `no_trottinette`, qui devient la clé primaire.
 - **location**: la table contient deux clés étrangères, `# no_utilisateur` et
   `# no_trottinette`, qui pointent vers les clés primaires des tables
-  `utilisateur` et `trottinette`. Comme un même utilisateur peut louer
-  plusieurs fois la même trottinette (à des dates différentes), la
-  combinaison de ces deux clés étrangères ne suffit pas à identifier une
-  location de manière unique. Nous créons donc, ici aussi, un compteur
-  `no_location`.
+  `utilisateur` et `trottinette`. Un même utilisateur peut certes louer
+  plusieurs fois la même trottinette, mais pas à la même date et heure de
+  départ: la combinaison `# no_utilisateur` + `# no_trottinette` +
+  `date_debut` identifie donc déjà chaque location de manière unique. Comme
+  pour la table `ecoute`, il n'est donc pas nécessaire de créer un compteur
+  `no_location`: nous utilisons cette combinaison de trois colonnes comme
+  clé primaire (composée).
 
 Nous obtenons donc les trois tables suivantes:
 
 - `utilisateur`: no_utilisateur, nom, prenom, telephone
 - `trottinette`: no_trottinette, modele
-- `location`: no_location, # no_utilisateur, # no_trottinette, date_debut,
-  date_fin, prix
+- `location`: # no_utilisateur, # no_trottinette, date_debut, date_fin, prix
 
 ```{graphviz}
 :align: center
@@ -630,10 +688,9 @@ digraph UML_Class_diagram {
       <tr> <td> <b>location</b> </td> </tr>
       <tr> <td>
         <table border="0" cellborder="0" cellspacing="7" >
-          <tr> <td align="left" port="l0"><u>no_location</u></td> </tr>
           <tr> <td align="left" port="a1"><u># no_utilisateur</u></td> </tr>
           <tr> <td port="a2" align="left" ><u># no_trottinette</u></td> </tr>
-          <tr> <td port="a3" align="left" >date_debut</td> </tr>
+          <tr> <td port="a3" align="left" ><u>date_debut</u></td> </tr>
           <tr> <td port="a4" align="left" >date_fin</td> </tr>
           <tr> <td port="a5" align="left" >prix</td> </tr>
         </table>
@@ -642,4 +699,31 @@ digraph UML_Class_diagram {
   ]
 }
 ```
+
+Voici à quoi ressemblent nos trois tables une fois remplies avec les données
+de l'exemple: chaque information n'apparaît plus qu'une seule fois.
+
+**Table `utilisateur`**
+
+| no_utilisateur | nom | prenom | telephone |
+| --------------: | :------ | :------- | :------------- |
+| 1 | Dupont | Bob | 079 111 11 11 |
+| 2 | Martin | Amandine | 079 222 22 22 |
+| 3 | Perroud | Marie | 079 333 33 33 |
+
+**Table `trottinette`**
+
+| no_trottinette | modele |
+| --------------: | :---------- |
+| 10 | Xiaomi Mi3 |
+| 12 | Ninebot ES4 |
+
+**Table `location`**
+
+| # no_utilisateur | # no_trottinette | date_debut | date_fin | prix |
+| -----------------: | -----------------: | :--------------- | :--------------- | ---: |
+| 1 | 10 | 01.05.2024 08:00 | 01.05.2024 08:30 | 3.00 |
+| 1 | 12 | 02.05.2024 09:00 | 02.05.2024 09:15 | 1.50 |
+| 2 | 10 | 02.05.2024 10:00 | 02.05.2024 10:45 | 4.50 |
+| 3 | 10 | 03.05.2024 07:30 | 03.05.2024 08:00 | 3.00 |
 ````
