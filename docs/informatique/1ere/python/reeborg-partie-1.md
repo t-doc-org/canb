@@ -309,13 +309,13 @@ définir pour réécrire le programme que tu as fait à l'exercice 4.
    def tourne_a_droite():
        for i in range(3):
        tourne_a_gauche()
-   ```
-   
+
    avance_4_fois()
    tourne_a_gauche()
    avance_4_fois()
    tourne_a_droite()
    avance_4_fois()
+   ```
 ````
 
 ## Exercice 6
