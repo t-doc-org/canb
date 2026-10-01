@@ -15,6 +15,7 @@ reeborg-haies
 reeborg-escaliers
 reeborg-etoiles
 reeborg-resume
+reeborg-quiz
 reeborg-but4
 python_intro_print_var_input
 if
