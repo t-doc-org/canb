@@ -8,6 +8,8 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 
 ## Programmation Python
 
+### Reeborg
+
 ```{toctree}
 reeborg-partie-1
 reeborg-partie-2
@@ -17,6 +19,11 @@ reeborg-etoiles
 reeborg-resume
 reeborg-quiz
 reeborg-but4
+```
+
+### Python pur
+
+```{toctree}
 python_intro_print_var_input
 if
 ```
