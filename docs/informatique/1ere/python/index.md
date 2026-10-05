@@ -19,6 +19,7 @@ reeborg-etoiles
 reeborg-resume
 reeborg-quiz
 reeborg-but4
+reeborg-objectifs
 ```
 
 ### Python pur

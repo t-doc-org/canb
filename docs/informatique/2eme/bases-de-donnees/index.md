@@ -15,4 +15,6 @@ sql-py
 type-donnees
 requetes
 bd-resume
+bd-quiz
+bd-objectifs
 ```
