@@ -254,16 +254,58 @@ def descend():
     tourne_a_droite()
 
 # Programme
-for i in range(5):
+for i in range(3):
     monte()
 
 demi_tour()
 
-for i in range(5):
+for i in range(3):
     descend()
 ```
 
 **Colle ta réponse dans le devoir sur Teams**
+
+````{solution}
+
+```{exec} python
+:when:
+# Définitions de commandes
+def tourne_a_droite():
+    for i in range(3):
+        tourne_a_gauche()
+
+def avance_2_fois():
+    for i in range(2):
+        avance()
+
+def demi_tour():
+    for i in range(2):
+        tourne_a_gauche()
+
+def monte():
+    tourne_a_gauche()
+    avance()
+    tourne_a_droite()
+    avance_2_fois()
+
+def descend():
+    avance_2_fois()
+    tourne_a_gauche()
+    avance()
+    tourne_a_droite()
+
+# Programme
+prend()
+for i in range(3):
+    monte()
+
+depose()
+demi_tour()
+
+for i in range(3):
+    descend()
+```
+````
 
 ## Si 6 scies scient 6 citrons, 606 scies scient 606 citrons !
 
@@ -378,6 +420,51 @@ for i in range(3):
 ```
 
 **Colle ta solution dans le devoir sur Teams**
+
+````{solution}
+1.  Dans `avance_5_fois()`, Reeborg prend la carotte avant d'avancer.
+2.  Dans `recolte_2_colonnes()`, Reeborg prend la dernière carotte de chaque
+    colonne après `avance_5_fois()`.
+
+```{exec} python
+:when:
+# Définition des commandes
+def tourne_a_droite():
+    for i in range(3):
+        tourne_a_gauche()
+
+def avance_2_fois():
+    for i in range(2):
+        avance()
+
+def avance_5_fois():
+    for i in range(5):
+        prend()
+        avance()
+
+def aller_au_depart():
+    avance_2_fois()
+    tourne_a_gauche()
+    avance_2_fois()
+
+def recolte_2_colonnes():
+    avance_5_fois()
+    prend()
+    tourne_a_droite()
+    avance()
+    tourne_a_droite()
+    avance_5_fois()
+    prend()
+    tourne_a_gauche()
+    avance()
+    tourne_a_gauche()
+
+# Programme
+aller_au_depart()
+for i in range(3):
+    recolte_2_colonnes()
+```
+````
 
 ## Exercice 11b
 
@@ -515,6 +602,26 @@ tourne_a_gauche()
 
 **Colle ta solution dans le devoir sur Teams**
 
+````{solution}
+```{exec} python
+:when:
+# Définition des commandes
+def prend_et_avance():
+    if objet_ici():
+        prend()
+    avance()
+
+def parcours_un_cote():
+    for i in range(9):
+        prend_et_avance()
+
+# Programme
+for i in range(4):
+    parcours_un_cote()
+    tourne_a_gauche()
+```
+````
+
 ## Exercice 12
 
 Tu vas écrire un programme qui permet à Reeborg de réaliser ses tâches dans les
@@ -553,6 +660,25 @@ for i in range(42):
 
 **Colle ta solution dans le devoir sur Teams**
 
+````{solution}
+```{exec} python
+:when:
+def avance_jusqua_tache_terminee():
+    if au_but():
+        termine()
+    avance()
+    if objet_ici():
+        prend()
+        avance()
+        depose()
+
+for i in range(42):
+    # La valeur 42 a été choisie pour être sûr d'arriver au bout.
+    # Nous verrons plus tard comment mieux faire.
+    avance_jusqua_tache_terminee()
+```
+````
+
 ## Exercice 13
 
 Reprends le programme de l'exercice 11a.
@@ -577,3 +703,57 @@ Fonctionne-t-il aussi dans le monde Récolte 1 ?
 ```{iframe} https://oci.e-apprendre.ch/reeborg-prog-light/reeborg_offline.html?lang=fr&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_fr.json&name=Seul&url=worlds%2Ftutorial_fr%2Fseul.json
 :style: height : 1100px; width : 800px;
 ```
+
+````{solution}
+Comme il y a au maximum 3 carottes par emplacement, on définit une commande
+`prend_tout()` qui essaie 3 fois de prendre une carotte s'il y en a une, et on
+l'utilise à la place de `prend()`.
+
+Le programme fonctionne aussi dans le monde **Récolte 1** : quand il n'y a
+qu'une carotte, les conditions `objet_ici()` suivantes ne sont simplement pas
+vérifiées.
+
+```{exec} python
+:when:
+# Définition des commandes
+def tourne_a_droite():
+    for i in range(3):
+        tourne_a_gauche()
+
+def prend_tout():
+    for i in range(3):
+        if objet_ici():
+            prend()
+
+def avance_2_fois():
+    for i in range(2):
+        avance()
+
+def avance_5_fois():
+    for i in range(5):
+        prend_tout()
+        avance()
+
+def aller_au_depart():
+    avance_2_fois()
+    tourne_a_gauche()
+    avance_2_fois()
+
+def recolte_2_colonnes():
+    avance_5_fois()
+    prend_tout()
+    tourne_a_droite()
+    avance()
+    tourne_a_droite()
+    avance_5_fois()
+    prend_tout()
+    tourne_a_gauche()
+    avance()
+    tourne_a_gauche()
+
+# Programme
+aller_au_depart()
+for i in range(3):
+    recolte_2_colonnes()
+```
+````
