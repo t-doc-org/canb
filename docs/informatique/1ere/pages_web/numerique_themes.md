@@ -2,6 +2,20 @@
 
 Chaque groupe traite l'un des thèmes ci-dessous. Les questions sont des pistes pour orienter vos recherches : vous n'êtes pas obligés de répondre à toutes, et vous pouvez en ajouter d'autres.
 
+## Répartition des groupes
+
+| Groupe | Élèves | Thème |
+|--------|--------|-------|
+| A1 | Mia, Mélody, Rinatyah | [2. Les réseaux sociaux et leur influence](#theme-reseaux-sociaux) |
+| A2 | Alexandre, Gaétane, Michaela | [7. L'intelligence artificielle à l'école et dans la société](#theme-ia) |
+| A3 | Damien, Elie, Thomas | [4. La cybercriminalité](#theme-cybercriminalite) |
+| A4 | Malcom, Kilian | [1. La protection des données personnelles](#theme-donnees) |
+| B1 | Gabriela, Clémence, Alec | [6. La surveillance et la vie privée](#theme-surveillance) |
+| B2 | Naila, Jeanne, Diana | [5. L'empreinte écologique du numérique](#theme-ecologie) |
+| B3 | Miguel, Nilo | [3. La désinformation et les fake news](#theme-desinformation) |
+| B4 | Uma, Maëlle | [8. La santé mentale et le numérique](#theme-sante-mentale) |
+
+(theme-donnees)=
 ## 1. La protection des données personnelles
 
 L'importance de protéger ses informations en ligne, les dangers liés aux fuites de données, et les principes du RGPD.
@@ -14,18 +28,20 @@ L'importance de protéger ses informations en ligne, les dangers liés aux fuite
 - Quelles mesures peut-on prendre pour protéger ses données personnelles en ligne ?
 - Qu’est-ce que le RGPD et comment protège-t-il les utilisateurs européens ?
 
+(theme-reseaux-sociaux)=
 ## 2. Les réseaux sociaux et leur influence
 
-Analyse des effets des réseaux sociaux sur les comportements, l'identité, la pression sociale, et la cyberdépendance.
+Analyse de la manière dont les réseaux sociaux fonctionnent et influencent nos comportements : algorithmes, construction de l'identité en ligne, pression sociale et consentement.
 
 **Questions :**
 
-- En quoi les réseaux sociaux influencent-ils la perception de soi et des autres ?
-- Quels sont les risques associés à l'exposition prolongée aux réseaux sociaux ?
-- Comment les algorithmes des réseaux sociaux influencent-ils ce que nous voyons en ligne ?
-- Quelle est l'importance du consentement dans le partage de contenu sur les réseaux sociaux ?
-- Quelles mesures peut-on prendre pour réduire les effets négatifs des réseaux sociaux ?
+- Comment les algorithmes des réseaux sociaux choisissent-ils ce que nous voyons en ligne ?
+- Qu'est-ce qu'une « bulle de filtres » et quels effets peut-elle avoir sur nos opinions ?
+- Comment construit-on son identité en ligne, et quelle image de soi les réseaux sociaux poussent-ils à montrer ?
+- Comment les réseaux sociaux exercent-ils une pression sociale (likes, tendances, influenceurs) ?
+- Quelle est l'importance du consentement dans le partage de contenu (photos, vidéos) sur les réseaux sociaux ?
 
+(theme-desinformation)=
 ## 3. La désinformation et les fake news
 
 Comment le numérique facilite la diffusion de fausses informations et les méthodes pour vérifier les sources.
@@ -38,6 +54,7 @@ Comment le numérique facilite la diffusion de fausses informations et les méth
 - Quelles sont les conséquences de la désinformation sur la société et la démocratie ?
 - Quels outils et méthodes peut-on utiliser pour vérifier la véracité des informations en ligne ?
 
+(theme-cybercriminalite)=
 ## 4. La cybercriminalité
 
 Exploration des types de cyberattaques (hameçonnage, ransomwares), et des stratégies pour s'en protéger.
@@ -50,6 +67,7 @@ Exploration des types de cyberattaques (hameçonnage, ransomwares), et des strat
 - Quelles sont les responsabilités légales des victimes et des pirates en cas de cyberattaque ?
 - Comment les gouvernements et les entreprises collaborent-ils pour lutter contre la cybercriminalité ?
 
+(theme-ecologie)=
 ## 5. L'empreinte écologique du numérique
 
 Impact environnemental de la production et de l'utilisation des technologies numériques (consommation énergétique, e-déchets).
@@ -62,19 +80,8 @@ Impact environnemental de la production et de l'utilisation des technologies num
 - Comment peut-on réduire l'empreinte écologique liée à l'utilisation des technologies numériques ?
 - Quels sont les efforts actuels des entreprises pour rendre le numérique plus durable ?
 
-## 6. La fracture numérique
-
-Inégalités d'accès au numérique selon les régions ou les catégories sociales, et leurs conséquences sur l'éducation et l'emploi.
-
-**Questions :**
-
-- Quelles sont les causes principales de la fracture numérique dans le monde ?
-- Quelles sont les conséquences de cette fracture pour l'éducation et le marché du travail ?
-- Comment les gouvernements peuvent-ils améliorer l'accès au numérique dans les zones rurales ou défavorisées ?
-- Quelles initiatives existent pour réduire les inégalités d'accès à la technologie ?
-- Comment la fracture numérique impacte-t-elle la participation citoyenne et l'accès à l'information ?
-
-## 7. La surveillance et la vie privée
+(theme-surveillance)=
+## 6. La surveillance et la vie privée
 
 Débat sur l'équilibre entre la sécurité nationale, la surveillance, et la protection de la vie privée dans le contexte numérique.
 
@@ -86,7 +93,8 @@ Débat sur l'équilibre entre la sécurité nationale, la surveillance, et la pr
 - Quelles lois existent pour protéger les individus contre une surveillance excessive ?
 - Comment les individus peuvent-ils protéger leur vie privée en ligne face à la surveillance ?
 
-## 8. L'intelligence artificielle à l'école et dans la société
+(theme-ia)=
+## 7. L'intelligence artificielle à l'école et dans la société
 
 Apports et risques de l'IA générative (ChatGPT, etc.) pour les élèves, et impacts de l'IA sur la société : travail des « petites mains », environnement.
 
@@ -99,14 +107,15 @@ Apports et risques de l'IA générative (ChatGPT, etc.) pour les élèves, et im
 - Qui sont les « petites mains » de l'IA (annotation des données, modération des contenus) et dans quelles conditions travaillent-elles ?
 - Quel est l'impact environnemental de l'IA (électricité, eau, centres de données) ?
 
-## 9. La santé mentale et le numérique
+(theme-sante-mentale)=
+## 8. La santé mentale et le numérique
 
-Influence de l'utilisation excessive des écrans, des jeux vidéo, et des réseaux sociaux sur la santé mentale des jeunes.
+Influence de l'utilisation des écrans et des jeux vidéo sur la santé mentale et le bien-être des jeunes.
 
 **Questions :**
 
-- Quels sont les effets de l'utilisation excessive des écrans sur la santé mentale des jeunes ?
-- Comment les réseaux sociaux influencent-ils l'estime de soi et l'anxiété ?
-- Quelles sont les stratégies pour maintenir un équilibre sain entre vie numérique et bien-être mental ?
+- Quels sont les effets d'une utilisation excessive des écrans sur la santé mentale et le sommeil des jeunes ?
+- Que disent les études sur le lien entre écrans et santé mentale ? Sur quels points les chercheurs sont-ils d'accord ou en désaccord ?
 - Comment les jeux vidéo peuvent-ils à la fois nuire et aider la santé mentale ?
-- Quels conseils peut-on donner aux jeunes pour réduire l'impact négatif du numérique sur leur santé mentale ?
+- Qu'est-ce que la cyberdépendance et comment la reconnaître ?
+- Quelles stratégies permettent de garder un équilibre sain entre vie numérique et bien-être ?
