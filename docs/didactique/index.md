@@ -2,5 +2,6 @@
 
 ```{toctree}
 numetsoc
+conceptions-erronees
 liens
 ```
