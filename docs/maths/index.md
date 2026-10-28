@@ -19,5 +19,4 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 ```{toctree}
 tab_signes_main
 func_quad_main
-script_david/index
 ```
