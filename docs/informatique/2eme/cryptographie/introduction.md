@@ -87,7 +87,7 @@ ainsi s'emparer de la couronne d'Angleterre.
 
 Le code (ensemble des conventions et des symboles utilisés pour rendre le
 message secret) utilisé est constitué de 23 symboles qui remplacent les lettres
-de l'alphabet (sauf j, v et w), ainsi que 36 symboles représentant des mots ou
+de l'alphabet (sauf J, V et W), ainsi que 36 symboles représentant des mots ou
 des phrases. De plus, il y a quatre symboles qui ne font rien et un symbole qui
 indique que la lettre suivante est doublée.
 
@@ -121,5 +121,5 @@ Que signifie le message suivant?
 ```
 
 ````{solution}
-steganographie ou cryptographie
+STEGANOGRAPHIE OU CRYPTOGRAPHIE
 ````

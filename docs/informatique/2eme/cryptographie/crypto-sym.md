@@ -10,7 +10,7 @@
 
 ```{solution}
 Énigme 1: Gallia -> 234483 <br>
-Énigme 2: MXOHV -> jules <br>
+Énigme 2: mxohv -> JULES <br>
 Énigme 3: NIORGITVJQD <br>
 Code final: 318
 ```
@@ -60,22 +60,22 @@ d'origine.
 Ce procédé a été beaucoup utilisé pendant la guerre de Sécession (1861-1865).
 Le Rail Fence dispose les lettres en "zig-zag" sur un nombre de lignes donné.
 
-Le texte "vive le collège saint-croix" donnera le message codé sur 2 lignes:
-VVLCLEEANERIIEEOLGSITCOX\
+Le texte "VIVE LE COLLÈGE SAINT-CROIX" donnera le message codé sur 2 lignes:
+vvlcleeaneriieeolgsitcox\
 Écrit en "zig-zag", cela donne:
 
 ```{code-block} text
-V V L C L E E A N E R I
- I E E O L G S I T C O X
+v v l c l e e a n e r i
+ i e e o l g s i t c o x
 ```
 
-Le même texte donnera le message codé sur 3 lignes: VLLENRIEEOLGSITCOXVCEAEI\
+Le même texte donnera le message codé sur 3 lignes: vllenrieeolgsitcoxvceaei\
 Écrit en "zig-zag", cela donne:
 
 ```{code-block} text
-V   L   L   E   N   R
- I E E O L G S I T C O X
-  V   C   E   A   E   I
+v   l   l   e   n   r
+ i e e o l g s i t c o x
+  v   c   e   a   e   i
 ```
 
 **Clé de chiffrement:** le nombre de lignes.
@@ -86,18 +86,18 @@ Un texte a été chiffré avec le procédé du Chiffre de Rail Fence avec comme
 clé de chiffrement 2.\
 Déchiffrez le texte suivant:
 
-<center>LCYTG AHEYE RQESF CLAEH FRRAR PORPI SMTIU ETAIE DCIFE</center>
+<center>lcytg aheye rqesf claeh frrar porpi smtiu etaie dcife</center>
 
 ````{solution}
 Il y 45 caractères $45 : 2 = 22.5$. Il y aura 23 caractères sur la première
 ligne et 22 sur la deuxième.
 
 ```{code-block} text
-L C Y T G A H E Y E R Q E S F C L A E H F R R
- A R P O R P I S M T I U E T A I E D C I F E
+l c y t g a h e y e r q e s f c l a e h f r r
+ a r p o r p i s m t i u e t a i e d c i f e
 ```
 
-<center>la cryptographie symetrique est facile a dechiffrer</center>
+<center>LA CRYPTOGRAPHIE SYMETRIQUE EST FACILE A DECHIFFRER</center>
 ````
 
 ## Substitutions monoalphabétiques
@@ -111,11 +111,11 @@ chaque lettre est remplacée par un autre symbole, toujours le même.
 Ce procédé, déjà utilisé dans l'Antiquité, était connu des Romains. Jules César,
 dont elle tire le nom, l'employait pour chiffrer certaines de ses
 correspondances. La substitution proposée par César est un décalage de trois
-positions. C'est-à-dire que le a est remplacé par D, b par E, etc.
+positions. C'est-à-dire que le A est remplacé par d, B par e, etc.
 
-| Clair | a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z |
+| Clair | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 | :---: |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Chiffré | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z | A | B | C |
+| Chiffré | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | a | b | c |
 
 **Clé de chiffrement:** décalage de trois positions.
 
@@ -124,13 +124,13 @@ positions. C'est-à-dire que le a est remplacé par D, b par E, etc.
 Codez le message suivant en utilisant le chiffre de César d'origine (décalage de
 trois positions):
 
-<center>La crypto, c'est sympa!</center>
+<center>LA CRYPTO, C'EST SYMPA!</center>
 
 ````{solution}
 Il faut effectuer un décalage de 3 positions pour chaque lettre:\
-l &rarr; O, a &rarr; D, c &rarr; F, ...
+L &rarr; o, A &rarr; d, C &rarr; f, ...
 
-<center>ODFUB SWRFH VWVBP SD</center>
+<center>odfub swrfh vwvbp sd</center>
 ````
 
 #### Exercice 3
@@ -138,14 +138,14 @@ l &rarr; O, a &rarr; D, c &rarr; F, ...
 Déchiffrez le texte suivant chiffré en utilisant le Chiffre de César d'origine,
 c'est-à-dire avec comme clé de chiffrement un décalage de trois positions.
 
-<center>WHAWH FRGHD YHFOH FKLII UHGHF HVDU</center>
+<center>whawh frghd yhfoh fklii uhghf hvdu</center>
 
 ````{solution}
 Un décalage de 3 positions vers la droite a été utilisé pour coder, il faut
 donc faire une décalage vers la gauche de 3 positions pour décoder:\
-W &rarr; t, H &rarr; e, A &rarr; x, ...
+w &rarr; T, h &rarr; E, a &rarr; X, ...
 
-<center>texte code avec le chiffre de cesar</center>
+<center>TEXTE CODE AVEC LE CHIFFRE DE CESAR</center>
 ````
 
 #### Remarque
@@ -164,9 +164,9 @@ Pour rendre le {term}`décryptage` plus difficile, on peut substituer à chaque
 lettre une lettre tirée au hasard. Dans ce cas, il y a environ
 $1.5 \cdot 10^{25}$ possibilités.
 
-| Clair | a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z |
+| Clair | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 | :---: |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Chiffré | K | T | E | W | Q | J | S | V | M | A | Z | G | P | X | C | U | I | O | B | L | Y | F | R | N | D | H |
+| Chiffré | k | t | e | w | q | j | s | v | m | a | z | g | p | x | c | u | i | o | b | l | y | f | r | n | d | h |
 
 **Clé de chiffrement:** le tableau de correspondance entier.
 
@@ -238,7 +238,7 @@ artisanal à la main était devenu trop dangereux et dépassé.
 
 Une méthode efficace pour attaquer un message qui utilise une substitution
 monoalphabétique est l'**analyse des fréquences**. En supposant que le symbole le
-plus fréquent remplace la lettre la plus fréquente en français (le "e") et en
+plus fréquent remplace la lettre la plus fréquente en français (le "E") et en
 appliquant cette logique aux autres lettres, il devient possible de
 décrypte le message, à condition qu'il soit suffisamment long.
 
@@ -246,7 +246,7 @@ Voici un tableau qui représente la fréquence d'apparition des lettres en
 français (les lettres accentuées ont été remplacée par des lettres non
 accentuées, les espaces et ponctuations ont été supprimés).
 
-| Lettre | e | a | s | i | t | n | r | ... |
+| Lettre | E | A | S | I | T | N | R | ... |
 | :---: |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Fréquence (en %) | 17.4 | 8.2 | 8.1 | 7.3 | 7.2 | 7.1 | 6.6 | ... |
 
@@ -275,7 +275,7 @@ alphabets décalés pour {term}`chiffrer` un message.
 
 **Clé de chiffrement:** un mot choisi.
 
-Chiffrons "tout est perdu" avec comme clé CRYPTO.
+Chiffrons "TOUT EST PERDU" avec comme clé CRYPTO.
 1. Écrire la clé en la répétant pour qu'elle soit de même longueur que le texte
 en clair.
 2. Calculer le décalage pour chaque lettre de la clé. A&rarr;C: décalage de 2
@@ -291,18 +291,18 @@ Sans devoir calculer le décalage, on peut utiliser le
 :align: center
 :widths: 10 3 3 3 3 3 3 3 3 3 3 3 3
 * - Texte clair
-  - t
-  - o
-  - u
-  - t
-  - e
-  - s
-  - t
-  - p
-  - e
-  - r
-  - d
-  - u
+  - T
+  - O
+  - U
+  - T
+  - E
+  - S
+  - T
+  - P
+  - E
+  - R
+  - D
+  - U
 * - Clé
   - C
   - R
@@ -330,18 +330,18 @@ Sans devoir calculer le décalage, on peut utiliser le
   - 19
   - 14
 * - Texte chiffré
-  - V
-  - F
-  - S
-  - I
-  - X
-  - G
-  - V
-  - G
-  - C
-  - G
-  - W
-  - I
+  - v
+  - f
+  - s
+  - i
+  - x
+  - g
+  - v
+  - g
+  - c
+  - g
+  - w
+  - i
 ```
 
 #### Exercice 4
@@ -349,7 +349,7 @@ Sans devoir calculer le décalage, on peut utiliser le
 Déchiffrez le message suivant, chiffré avec le Chiffre de Vigenère, sachant que
 la clé de chiffrement est **informatique**:
 
-<center>ARXOD QONDH YXWV</center>
+<center>arxod qondh yxwv</center>
 
 ````{solution}
 Pour déterminer le message en clair, il faut compléter le tableau suivant:
@@ -409,23 +409,23 @@ lettre a.
   - 8
   - 13
 * - Texte chiffré
-  - A
-  - R
-  - X
-  - O
-  - D
-  - Q
-  - O
-  - N
-  - D
-  - H
-  - Y
-  - X
-  - W
-  - V
+  - a
+  - r
+  - x
+  - o
+  - d
+  - q
+  - o
+  - n
+  - d
+  - h
+  - y
+  - x
+  - w
+  - v
 ```
 
-<center>sesame ouvre toi</center>
+<center>SESAME OUVRE TOI</center>
 ````
 
 ## Cryptographie symétrique moderne

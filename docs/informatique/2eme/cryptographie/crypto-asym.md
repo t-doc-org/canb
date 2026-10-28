@@ -169,11 +169,11 @@ La clé privée est (13, 11, 103) et la clé publique est (143, 7).
 Pour simplifier l'exemple, nous remplaceront chaque lettre par son rang dans
 l'alphabet, plutôt que par son code ASCII étendu.
 
-Bob souhaite envoyer à Alice le message suivant: "salut".
+Bob souhaite envoyer à Alice le message suivant: "SALUT".
 
 1. Bob cherche dans l'annuaire la clé publique d'Alice qui est (55, 43).
 2. Bob transforme le message en nombre:
-   s &rarr; 19, a &rarr; 01, l &rarr; 12, u &rarr; 21, t &rarr; 20.\
+   S &rarr; 19, A &rarr; 01, L &rarr; 12, U &rarr; 21, T &rarr; 20.\
    Le message transformé donnera: 19 01 12 21 20.
 3. Comme 1901122120 > 55, Bob décide de découper en blocs d'une lettre
     (toujours inférieur ou égal à 26, donc forcément < 55).\
@@ -181,11 +181,11 @@ Bob souhaite envoyer à Alice le message suivant: "salut".
 4. Bob détermine le cryptogramme de chaque bloc, noté $m$, en utilisant la
    formule suivante:\
    $$c = m^{43} \textrm{ mod } 55$$
-   s: $c = 19^{43} \textrm{ mod } 55 = 39$\
-   a: $c = 1^{43} \textrm{ mod } 55 = 1$\
-   l: $c = 12^{43} \textrm{ mod } 55 = 23$\
-   u: $c = 21^{43} \textrm{ mod } 55 = 21$\
-   t: $c = 20^{43} \textrm{ mod } 55 = 25$
+   S: $c = 19^{43} \textrm{ mod } 55 = 39$\
+   A: $c = 1^{43} \textrm{ mod } 55 = 1$\
+   L: $c = 12^{43} \textrm{ mod } 55 = 23$\
+   U: $c = 21^{43} \textrm{ mod } 55 = 21$\
+   T: $c = 20^{43} \textrm{ mod } 55 = 25$
 
    Bob transmet à Alice le cryptogramme suivant composé de 5 blocs:
    39 01 23 21 25.
@@ -226,9 +226,9 @@ Alice a reçu le cryptogramme suivant composé de 5 blocs: 39 01 23 21 25.
    21: $m = 21^{27} \textrm{ mod } 55 = 21$\
    25: $m = 25^{27} \textrm{ mod } 55 = 20$
 3. Alice transforme le nombre en lettre (pour faciliter, nous avions pris le
-   rang de la lettre dans l'alphabet au lieu du code ASCII étendu): 19 &rarr; s,
-   1 &rarr; a, 12 &rarr; l, 21 &rarr; u et 20 &rarr; t.\
-   Le message reçu est donc "salut".
+   rang de la lettre dans l'alphabet au lieu du code ASCII étendu): 19 &rarr; S,
+   1 &rarr; A, 12 &rarr; L, 21 &rarr; U et 20 &rarr; T.\
+   Le message reçu est donc "SALUT".
 
 #### Exercice 7
 
