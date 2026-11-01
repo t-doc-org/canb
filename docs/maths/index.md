@@ -30,7 +30,7 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 
 [Corrigé animé - ensembles - exercice 7](https://www.e-apprendre.ch/t-doc/maths/1ere/hopital-exercice7.html)
 
-
+[Corrigé animé - inéquations - tableau de signes](https://www.e-apprendre.ch/t-doc/maths/1ere/tableau-de-signes.html)
 
 ```{toctree}
 tab_signes_main
