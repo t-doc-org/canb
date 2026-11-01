@@ -16,11 +16,9 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 
 ### 1ère année
 
-#### Intervalles, inéquations, ensembles
+#### Intervalles, ensembles
 
 [Corrigé animé - intervalles - union, intersection, exclusion](https://www.e-apprendre.ch/t-doc/maths/1ere/intervalles.html)
-
-[Corrigé animé - inéquations - résolution](https://www.e-apprendre.ch/t-doc/maths/1ere/inequations.html)
 
 [Corrigé animé - ensembles - exercice 1](https://www.e-apprendre.ch/t-doc/maths/1ere/ensembles-exercice1.html)
 
@@ -29,6 +27,10 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 [Corrigé animé - ensembles - exercice 4](https://www.e-apprendre.ch/t-doc/maths/1ere/venn-exercice4.html)
 
 [Corrigé animé - ensembles - exercice 7](https://www.e-apprendre.ch/t-doc/maths/1ere/hopital-exercice7.html)
+
+### Inéquations
+
+[Corrigé animé - inéquations - résolution](https://www.e-apprendre.ch/t-doc/maths/1ere/inequations.html)
 
 [Corrigé animé - inéquations - tableau de signes](https://www.e-apprendre.ch/t-doc/maths/1ere/tableau-de-signes.html)
 
