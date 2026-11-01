@@ -25,8 +25,7 @@ $t_1 \approx 0.51,\qquad t_2 \approx 2.00$
 
 ### Tableau de signes
 
-```{flex-table}
-:class: function-table
+```{flex-table} function-table
 |$t$|{.l .w}$-\infty$|$0.51$|{.w}|$2$|{.r .w}$+\infty$
 |$t - 0.51$|$-$|{.g}$0$|$+$||$+$
 |$t - 2$|$-$||$-$|{.g}$0$|$+$
@@ -54,8 +53,7 @@ $x_1 \approx 9.13,\qquad x_2 \approx 54.87$
 
 ### Tableau de signes
 
-```{flex-table}
-:class: function-table
+```{flex-table} function-table
 |$x$|{.l .w}$-\infty$|$9.13$|{.w}|$54.87$|{.r .w}$+\infty$
 |$x-9.13$|$-$|{.g}$0$|$+$||$+$
 |$x-54.87$|$-$||$-$|{.g}$0$|$+$
@@ -75,8 +73,7 @@ Numérateur nul : $h=20$
 
 ### Tableau de signes
 
-```{flex-table}
-:class: function-table
+```{flex-table} function-table
 |$h$|{.l .w}$0$|$20$|{.r .w}$+\infty$
 |$h-20$|$-$|{.g}$0$|$+$
 |$h+5$|$+$|{.g}|$+$
