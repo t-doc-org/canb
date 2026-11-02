@@ -36,8 +36,16 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 
 ```{toctree}
 tab_signes_main
+```
+
+#### Fonctions
+
+[Animation - fonctions - les 3 visages d'une fonction](https://www.e-apprendre.ch/t-doc/maths/1ere/fonction-trois-representations.html)
+
+```{toctree}
 func_quad_main
 ```
+
 ### 3ème année
 
 #### Analyse
