@@ -35,8 +35,7 @@ Afin de pouvoir numéroter ces titres facilement et de créer une table des mati
 
 Pour afficher la fenêtre du styliste, il faut cliquer sur :
 
-````{list-grid}
-:style: grid-template-columns: 1fr 1fr;
+````{list-grid} 1fr 1fr
 - ```{figure} fichiers_styles/img_19.png
    :width: 100px
    Figure {nump}`figure`: sur Mac OS

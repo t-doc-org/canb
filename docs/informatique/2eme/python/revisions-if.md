@@ -70,8 +70,7 @@ Que vont afficher chacun de ces programmes?
 :style: width: 100%;
 ```
 
-````{list-grid}
-:style: grid-template-columns: 1fr 1fr;
+````{list-grid} 1fr 1fr
 - # Programme 1
   Que va afficher ce programme?
 
@@ -134,8 +133,7 @@ Que vont afficher chacun de ces programmes?
 ````
 
 `````{solution}
-````{list-grid}
-:style: grid-template-columns: 1fr 1fr;
+````{list-grid} 1fr 1fr
 - # Programme 1
   ```{exec} python
   :after: prog2.1
@@ -539,8 +537,7 @@ Quelles sont les différences entre ces trois programmes?
 :style: width: 100%;
 ```
 
-`````{list-grid}
-:style: grid-template-columns: 1fr 1fr 1fr;
+`````{list-grid} 1fr 1fr 1fr
   - # Programme 1
     Que va afficher ce programme?
 
@@ -607,8 +604,7 @@ Quelles sont les différences entre ces trois programmes?
 `````
 
 `````{solution}
-````{list-grid}
-:style: grid-template-columns: 1fr 1fr 1fr;
+````{list-grid} 1fr 1fr 1fr
 - # Programme 1
   ```{exec} python
   :after: prog1.1
