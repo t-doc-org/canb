@@ -6,3 +6,5 @@
 3eme/index
 4eme/index
 ```
+
+[Exerciseur en ligne (en développement)](https://e-apprendre.ch/mathexos/)
