@@ -1,4 +1,4 @@
-# Cours de maths - 3ème année
+# Cours de maths - 4ème année
 
 ## Agents Copilot
 
