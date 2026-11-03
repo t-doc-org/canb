@@ -38,6 +38,12 @@ Un compte edufr/studentfr est nécessaire pour exécuter des agents.
 tab_signes_main
 ```
 
+#### Factorisation
+
+[Corrigé animé - factorisation - somme ou produit](https://www.e-apprendre.ch/t-doc/maths/1ere/produit-ou-somme.html)
+
+[Corrigé animé - factorisation - mise en évidence](https://www.e-apprendre.ch/t-doc/maths/1ere/mise-en-evidence.html)
+
 #### Fonctions
 
 [Animation - fonctions - les 3 visages d'une fonction](https://www.e-apprendre.ch/t-doc/maths/1ere/fonction-trois-representations.html)
