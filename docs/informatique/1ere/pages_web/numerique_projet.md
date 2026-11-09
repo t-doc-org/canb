@@ -100,7 +100,7 @@ Chacune des trois parties donne une note : **note = points obtenus × 5 / total 
 
 **Total : 28 points possibles** (somme des pondérations : 7 × 4 points)
 
-[exemple-sources]: https://eduetatfr-my.sharepoint.com/:w:/g/personal/brice_canvel_edufr_ch/ESlaWR-s-bNEhiGHxWLvB0UBrzmVBh4fFH1qH0fi-NkE2g?e=KBwhQk
+[exemple-sources]: https://eduetatfr-my.sharepoint.com/:w:/g/personal/brice_canvel_edufr_ch/IQAPw6SaZwNJQJVOWR-D6E7wAebaQ7JWuRL1xVH9rdQQH9E?e=n3RhKL
 [liens-page]: https://docs.google.com/document/d/1HhUKI98ZPRQHtqwWWjmvWX7yXrCIUqo5mrES3kGItEU/edit?usp=sharing
 [images]: https://docs.google.com/document/d/1yhM-2jk6-WODTnmFowDN-BxdgKVye9mNzQjJxq_mGks/edit?usp=sharing
 [video]: https://eduetatfr-my.sharepoint.com/:w:/g/personal/brice_canvel_edufr_ch/IQB-XH2ivC4kS5e6putM_R0FASxPgQOrczLX96v9BEzbAlM?e=BEBvRk
