@@ -15,6 +15,7 @@ Par groupe, vous allez faire une recherche sur un des thèmes de la [liste des t
 
 - Les sources doivent être **variées** : pas seulement des sites web, mais aussi des livres, des magazines, des articles de journaux, etc.
 - Ressources en ligne de la bibliothèque : [ressources en ligne](https://new.cscfr.ch/index.php/fr/services/bibliotheque/ressources-en-ligne)
+- Articles du journal Courrier international : [CI](https://e-apprendre.ch/CI/)
 - **Créer un document Word partagé** avec l'enseignant (brice.canvel@edufr.ch). Le titre du document doit contenir votre classe et le numéro du groupe (par exemple 1F3_Groupe_4).
 - Pour chaque source, noter dans ce document :
   - la source ;
