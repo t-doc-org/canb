@@ -259,6 +259,21 @@ peut:
 - Se rencontrer physique pour faire l'échange.
 - Passer par une autorité de certification qui contrôle l'identité de la
   personne et stocke la clé (par exemple DigiCert).
+  
+## Outil RSA
+
+<link rel="stylesheet" href="../../../_static/atelier_rsa.css">
+<script src="../../../_static/atelier_rsa.js"></script>
+
+Cet atelier illustre le fonctionnement de RSA, de la création des clés au
+chiffrement d'un mot. Chaque lettre est remplacée par sa position dans
+l'alphabet (A = 1, B = 2, …, Z = 26).
+
+- **Démo** : on suit pas à pas, de manière animée, la création des clés puis le chiffrement.
+- **S'exercer** : on crée soi-même les clés et on chiffre un mot, avec des aides.
+- **Chiffrer / déchiffrer** : on entre une clé et un message, et l'outil chiffre ou déchiffre.
+
+<div id="atelier_rsa" class="atelier_rsa"></div>
 
 ## Résumé en vidéo
 
