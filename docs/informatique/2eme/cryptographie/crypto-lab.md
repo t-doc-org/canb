@@ -32,7 +32,7 @@ Deux possibilités s'offrent à nous avec le chiffrement asymétrique :
 
 ```{image} images/pgp_schema-signature-verification.png
 :alt: Schéma de la signature numérique d'un document et de sa vérification
-:width: 60%
+:width: 100%
 :align: center
 ```
 
@@ -71,7 +71,7 @@ VOTRE adresse email, le reste comme indiqué sur la copie d'écran) -- le
 
 ```{image} images/pgp_formulaire-generation-cles.png
 :alt: Onglet « Générer des clés » rempli avec le nom, l'adresse email, RSA, 2048 bits, sans expiration et le mot de passe de la clé privée
-:width: 80%
+:width: 100%
 :align: center
 ```
 
@@ -81,7 +81,7 @@ Après un moment, vous verrez apparaître vos clés à droite de la fenêtre :
 
 ```{image} images/pgp_cles-generees-telechargement.png
 :alt: Blocs de clé publique et de clé privée générés, avec les boutons « Télécharger la clé publique » et « Télécharger la clé privée »
-:width: 60%
+:width: 100%
 :align: center
 ```
 
@@ -90,7 +90,7 @@ Téléchargement vos 2 clés :
 
 ```{image} images/pgp_fichiers-cles-sec-pub-asc.png
 :alt: Les deux fichiers de clés téléchargés, l'un en -sec.asc et l'autre en -pub.asc
-:width: 70%
+:width: 100%
 :align: center
 ```
 
@@ -116,7 +116,7 @@ Allez dans l'onglet « Chiffrer + signer / Déchiffrer + vérifier », sous-ongl
 
 ```{image} images/pgp_onglet-chiffrer-signer.png
 :alt: Onglet « Chiffrer + signer / Déchiffrer + vérifier » de l'outil PGP, sous-onglet « Chiffrer et signer », avec les champs à remplir
-:width: 80%
+:width: 100%
 :align: center
 ```
 
@@ -140,7 +140,7 @@ message chiffré :
 
 ```{image} images/pgp_message-chiffre-signe.png
 :alt: Message « Message signé et chiffré avec succès » avec le bouton « Télécharger le message chiffré et signé »
-:width: 80%
+:width: 100%
 :align: center
 ```
 
@@ -164,7 +164,7 @@ champs à remplir :
 
 ```{image} images/pgp_onglet-dechiffrer-verifier.png
 :alt: Sous-onglet « Déchiffrer et vérifier » de l'outil PGP avec les champs à remplir
-:width: 80%
+:width: 100%
 :align: center
 ```
 
@@ -175,7 +175,7 @@ message en clair s'affiche et l'outil confirme que la signature est valide :
 
 ```{image} images/pgp_message-dechiffre-verifie.png
 :alt: Message « Message déchiffré et signature valide » avec l'empreinte de l'expéditeur, et le message en clair
-:width: 80%
+:width: 100%
 :align: center
 ```
 
