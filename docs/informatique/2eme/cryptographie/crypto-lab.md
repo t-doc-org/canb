@@ -10,8 +10,6 @@ asymétrique, de chiffrer et signer des messages en utilisant un couple de clés
 privée/publique (il n'est possible de déchiffrer qu'avec la clé correspondant à
 celle qui a été utilisée pour chiffrer).
 
-KEZAKO : Comment crypte-t-on les données sur internet ?
-
 Deux possibilités s'offrent à nous avec le chiffrement asymétrique :
 
 - **Chiffrement** : l'expéditeur a besoin de la clé publique du destinataire avec
