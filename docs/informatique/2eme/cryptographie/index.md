@@ -8,6 +8,7 @@ introduction
 crypto-sym
 crypto-asym
 crypto-lab
+crypto-quiz
 frequences
 notions-math
 glossaire
