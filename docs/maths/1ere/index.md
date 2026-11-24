@@ -36,6 +36,8 @@ tab_signes_main
 
 [Corrigé animé - factorisation - mise en évidence](https://www.e-apprendre.ch/t-doc/maths/1ere/mise-en-evidence.html)
 
+[Factorisation d'un trinome - somme et produit](https://www.e-apprendre.ch/t-doc/maths/1ere/factoriser-trinome.html)
+
 ### Fonctions
 
 [Animation - fonctions - les 3 visages d'une fonction](https://www.e-apprendre.ch/t-doc/maths/1ere/fonction-trois-representations.html)
