@@ -46,6 +46,17 @@ asymétrique.
 Vous allez l'utiliser pour vous créer des clés et chiffrer/signer des messages
 que vous vous enverrez par email.
 
+L'outil PGP ci-dessous est organisé en onglets :
+
+- **Générer des clés** : création de votre couple de clés publique/privée ;
+- **Signer / Vérifier** : signature avec la clé privée de l'expéditeur,
+  vérification avec sa clé publique (le message reste lisible par tous) ;
+- **Chiffrer / Déchiffrer** : chiffrement avec la clé publique du destinataire,
+  déchiffrement avec sa clé privée (le message n'est pas signé) ;
+- **Chiffrer + signer / Déchiffrer + vérifier** : les deux à la fois
+  (confidentialité et authenticité). C'est cet onglet que vous utiliserez pour
+  vous envoyer des messages.
+
 % <https://pgp.najm.uk/>
 
 ### Génération d'un couple de clés
@@ -54,22 +65,23 @@ que vous vous enverrez par email.
 :style: height: 1400px;
 ```
 
-Remplissez les champs (mettez VOTRE nom et VOTRE adresse email, le reste comme indiqué sur la copie d'écran) --
-la « Passphrase » est un mot de passe utilisé pour protéger votre clé privée --
+Dans l'onglet « Générer des clés », remplissez les champs (mettez VOTRE nom et
+VOTRE adresse email, le reste comme indiqué sur la copie d'écran) -- la
+« Phrase de passe » est un mot de passe utilisé pour protéger votre clé privée --
 ne l'oubliez pas :
 
 ```{image} images/pgp_formulaire-generation-cles.png
-:alt: Formulaire « Generate PGP Keys » rempli avec le nom, l'adresse email et la passphrase
-:width: 70%
+:alt: Onglet « Générer des clés » rempli avec le nom, l'adresse email, RSA, 2048 bits, sans expiration et la phrase de passe
+:width: 80%
 :align: center
 ```
 
-Puis cliquez sur Generate Keys ...
+Puis cliquez sur « Générer les clés »...
 
 Après un moment, vous verrez apparaître vos clés à droite de la fenêtre :
 
 ```{image} images/pgp_cles-generees-telechargement.png
-:alt: Blocs de clé publique et de clé privée générés, avec les boutons de téléchargement
+:alt: Blocs de clé publique et de clé privée générés, avec les boutons « Télécharger la clé publique » et « Télécharger la clé privée »
 :width: 60%
 :align: center
 ```
@@ -100,31 +112,36 @@ Déposez le fichier contenant votre clé publique dans le répertoire dont vous 
 :style: height: 1400px;
 ```
 
-Allez dans l'onglet Encrypt (+Sign) :
+Allez dans l'onglet « Chiffrer + signer / Déchiffrer + vérifier », sous-onglet
+« Chiffrer et signer » :
 
-```{image} images/pgp_onglet-encrypt-sign.png
-:alt: Onglet « Encrypt (+Sign) » de l'outil PGP avec les champs à remplir
-:width: 70%
+```{image} images/pgp_onglet-chiffrer-signer.png
+:alt: Onglet « Chiffrer + signer / Déchiffrer + vérifier » de l'outil PGP, sous-onglet « Chiffrer et signer », avec les champs à remplir
+:width: 80%
 :align: center
 ```
 
 Vous allez chiffrer et signer un message pour votre voisin·e.
 
 Vous devez pour cela charger la clé publique du destinataire qui sera utilisée
-pour chiffrer le message (Receiver's public key) dans le répertoire dont vous trouverez le lien sur Moodle (le même que celui où vous avez déposé votre fichier de clé publique).
+pour chiffrer le message (« Clé publique du destinataire (pour chiffrer) ») dans
+le répertoire dont vous trouverez le lien sur Moodle (le même que celui où vous
+avez déposé votre fichier de clé publique).
 
-Vous devez également charger votre clé privée pour signer le message (Signer's
-private key) et le mot de passe que vous avez utilisé lors de sa création. Si
-vous ne mettez pas votre clé privée, alors le message sera uniquement chiffré
-mais pas signé.
+Vous devez également charger votre clé privée pour signer le message (« Votre
+clé privée (pour signer) ») et saisir la phrase de passe que vous avez utilisée
+lors de sa création. Pour chiffrer un message sans le signer, on utiliserait
+l'onglet « Chiffrer / Déchiffrer » : seule la clé publique du destinataire est
+alors nécessaire.
 
-Si tout se passe bien, quand vous cliquez sur « Encrypt the message », vous
-devriez voir un message indiquant que tout s'est bien passé et vous pourrez
-télécharger le message chiffré :
+Écrivez votre message dans « Votre message en clair ». Si tout se passe bien,
+quand vous cliquez sur « Chiffrer et signer le message », vous devriez voir un
+message indiquant que tout s'est bien passé et vous pourrez télécharger le
+message chiffré :
 
 ```{image} images/pgp_message-chiffre-signe.png
-:alt: Message « successfully encrypted and signed » avec le bouton pour télécharger le message chiffré
-:width: 70%
+:alt: Message « Message signé et chiffré avec succès » avec le bouton « Télécharger le message chiffré et signé »
+:width: 80%
 :align: center
 ```
 
@@ -137,17 +154,33 @@ message chiffré que vous venez de télécharger.
 :style: height: 1400px;
 ```
 
-Quand vous recevez un message, téléchargez-le puis allez dans l'onglet Decrypt
-(+Verify) :
+Quand vous recevez un message, téléchargez-le.
 
-```{image} images/pgp_onglet-decrypt-verify.png
-:alt: Onglet « Decrypt (+Verify) » de l'outil PGP avec les champs à remplir
-:width: 70%
+Avant d'aller plus loin, réfléchissez : de quelles clés avez-vous besoin pour
+déchiffrer le message ? Et pour vérifier la signature ?
+
+Allez ensuite dans l'onglet « Chiffrer + signer / Déchiffrer + vérifier »,
+sous-onglet « Déchiffrer et vérifier », et comparez votre réponse avec les
+champs à remplir :
+
+```{image} images/pgp_onglet-dechiffrer-verifier.png
+:alt: Sous-onglet « Déchiffrer et vérifier » de l'outil PGP avec les champs à remplir
+:width: 80%
 :align: center
 ```
 
-Je vous laisse réfléchir quelles sont les clés dont vous avez besoin pour
-déchiffrer le message et vérifier la signature.
+Chargez les clés et le message reçu, saisissez votre phrase de passe, puis
+cliquez sur « Déchiffrer et vérifier le message ». Si tout est correct, le
+message en clair s'affiche et l'outil confirme que la signature est valide :
+
+```{image} images/pgp_message-dechiffre-verifie.png
+:alt: Message « Message déchiffré et signature valide » avec l'empreinte de l'expéditeur, et le message en clair
+:width: 80%
+:align: center
+```
+
+L'empreinte affichée identifie la clé de l'expéditeur. Si le message a été signé
+avec une autre clé que celle que vous avez chargée, l'outil vous en avertit.
 
 ### Et maintenant pour le prof ...
 
