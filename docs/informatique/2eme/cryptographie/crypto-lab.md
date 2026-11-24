@@ -66,12 +66,11 @@ L'outil PGP ci-dessous est organisé en onglets :
 ```
 
 Dans l'onglet « Générer des clés », remplissez les champs (mettez VOTRE nom et
-VOTRE adresse email, le reste comme indiqué sur la copie d'écran) -- la
-« Phrase de passe » est un mot de passe utilisé pour protéger votre clé privée --
-ne l'oubliez pas :
+VOTRE adresse email, le reste comme indiqué sur la copie d'écran) -- le
+« Mot de passe de la clé privée » protège votre clé privée -- ne l'oubliez pas :
 
 ```{image} images/pgp_formulaire-generation-cles.png
-:alt: Onglet « Générer des clés » rempli avec le nom, l'adresse email, RSA, 2048 bits, sans expiration et la phrase de passe
+:alt: Onglet « Générer des clés » rempli avec le nom, l'adresse email, RSA, 2048 bits, sans expiration et le mot de passe de la clé privée
 :width: 80%
 :align: center
 ```
@@ -129,8 +128,8 @@ le répertoire dont vous trouverez le lien sur Moodle (le même que celui où vo
 avez déposé votre fichier de clé publique).
 
 Vous devez également charger votre clé privée pour signer le message (« Votre
-clé privée (pour signer) ») et saisir la phrase de passe que vous avez utilisée
-lors de sa création. Pour chiffrer un message sans le signer, on utiliserait
+clé privée (pour signer) ») et saisir le mot de passe de la clé privée que vous
+avez choisi lors de sa création. Pour chiffrer un message sans le signer, on utiliserait
 l'onglet « Chiffrer / Déchiffrer » : seule la clé publique du destinataire est
 alors nécessaire.
 
@@ -169,7 +168,8 @@ champs à remplir :
 :align: center
 ```
 
-Chargez les clés et le message reçu, saisissez votre phrase de passe, puis
+Chargez les clés et le message reçu, saisissez le mot de passe de votre clé
+privée, puis
 cliquez sur « Déchiffrer et vérifier le message ». Si tout est correct, le
 message en clair s'affiche et l'outil confirme que la signature est valide :
 
