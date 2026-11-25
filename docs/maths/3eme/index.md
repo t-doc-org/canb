@@ -12,8 +12,10 @@
 
 [Illustration asymptotes obliques](https://www.e-apprendre.ch/t-doc/maths/3eme/demo-asymptote-oblique.html)
 
-[Dérivation - identifier les formes (c, k*f, f+g, f-g, f*g, 1/g, f/g)](https://www.e-apprendre.ch/t-doc/maths/3eme/structure-fonctions-derivation.html)
+[Dérivation - identifier les formes (k, k*f, f+g, f-g, f*g, 1/g, f/g)](https://www.e-apprendre.ch/t-doc/maths/3eme/structure-fonctions-derivation.html)
 
 [Dérivation - illustration des différentes règles](https://www.e-apprendre.ch/t-doc/maths/3eme/animation-regles-derivation.html)
 
-[Dérivation - exercices d'entraînement](https://www.e-apprendre.ch/t-doc/maths/3eme/derivation-pas-a-pas.html)
+[Dérivation - exercices d'entraînement - (k, k*f, f+g, f-g, f*g, 1/g, f/g)](https://www.e-apprendre.ch/t-doc/maths/3eme/derivation-pas-a-pas.html)
+
+[Dérivation - exercices d'entraînement - dérivée de (g(x))^n](https://e-apprendre.ch/t-doc/maths/3eme/derivee-composee-pas-a-pas.html)
