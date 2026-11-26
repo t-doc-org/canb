@@ -7,6 +7,7 @@
 introduction
 entiers-non-signes
 entiers-signes
+outil-bin-dec-hex
 caracteres
 couleurs
 images
